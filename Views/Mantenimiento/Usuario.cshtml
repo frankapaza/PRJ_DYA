@@ -1,0 +1,242 @@
+﻿@using BE_DYA
+
+@{
+    ViewBag.Title = "Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    BE_COMBO lstRolBE = ViewData["lstRolBE"] as BE_COMBO;
+    BE_COMBO lstTipoCuentaBE = ViewData["lstTipoCuentaBE"] as BE_COMBO;
+}
+
+<div class="subheader">
+    <h1 class="subheader-title">
+        <i class="subheader-icon fal fa-window"></i> Mantenimiento de Usuarios
+        <small>
+            Registro y modificación de usuarios.
+        </small>
+    </h1>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="panel-1" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Mantenimiento de Usuarios
+                </h2>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <!--div class="panel-tag">
+                        <p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+                        <p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
+                    </div-->
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label>Usuario</label>
+                                <input type="text" placeholder="Busqueda por Usuario" id="txt_buscar_usuario" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label>Documento</label>
+                                <input type="text" placeholder="Busqueda por Usuario" id="txt_buscar_documento" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label>Nombres</label>
+                                <input type="text" placeholder="Busqueda por Usuario" id="txt_buscar_nombres" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label>Apellidos</label>
+                                <input type="text" placeholder="Busqueda por Usuario" id="txt_buscar_apellidos" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label>Email Corporativo</label>
+                                <input type="text" placeholder="Busqueda por Email" id="txt_buscar_correo_corporativo" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label>&nbsp;</label>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" id="btn_buscar">Buscar</button>
+                                <button type="button" class="btn btn-danger">Limpiar</button>
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-modal-usuario">Nuevo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-lista">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Usuario</th>
+                                            <th>Documento</th>
+                                            <th>Nombres</th>
+                                            <th>Apellidos</th>
+                                            <th>Correo Corporativo</th>
+                                            <th>Celular Personal</th>
+                                            <th>Celular Corporativo</th>
+                                            <th>Estado</th>
+                                            <th>Último Evento</th>
+                                            <th>Usuario</th>
+                                            <th>Fecha</th>
+                                            <th>Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bs-modal-usuario" id="bs-modal-usuario" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Registro de Nuevo Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="txt_codigo_usuario" value="0"/>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_usuario">Usuario</label>
+                        <input type="text" placeholder="Usuario" class="form-control" id="txt_usuario">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_password">Password</label>
+                        <input type="password" placeholder="Password" class="form-control" id="txt_password">
+                    </div>
+                    <div class="col-md-4 mb-3">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_documento">Documento</label>
+                        <input type="text" placeholder="Ingrese Documento" class="form-control" id="txt_documento">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_nombre">Nombres</label>
+                        <input type="text" placeholder="Ingrese Nombres" class="form-control" id="txt_nombre">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_apellidos">Apellidos</label>
+                        <input type="text" placeholder="Ingrese Apellidos" class="form-control" id="txt_apellidos">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_email_corporativa">Email corporativo</label>
+                        <input type="email" placeholder="Ingrese Email Corporativo" class="form-control" id="txt_email_corporativa">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_celular_personal">Celular Personal</label>
+                        <input type="text" placeholder="Ingrese Celular Personal" class="form-control" id="txt_celular_personal">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label" for="txt_celular_corporativo">Celular Corporativo</label>
+                        <input type="text" placeholder="Ingrese Celular Corporativo" class="form-control" id="txt_celular_corporativo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        @Html.LabelFor(m => lstRolBE, "Tipo Perfil",
+                        new { @class = "form-label" })
+
+                        @Html.DropDownListFor(m => lstRolBE.dataSelect,
+                        new SelectList(lstRolBE.lstDataBE, "value", "key"),
+                        new { @class = "form-control", @id = "slt_perfil" })
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        @Html.LabelFor(m => lstTipoCuentaBE, "Tipo Cuenta",
+                        new { @class = "form-label" })
+
+                        @Html.DropDownListFor(m => lstTipoCuentaBE.dataSelect,
+                        new SelectList(lstTipoCuentaBE.lstDataBE, "value", "key"),
+                        new { @class = "form-control", @id = "slt_tipo_cuenta" })
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btn_registrar">Registrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--div class="modal fade bs-modal-usuario" tabindex="-1" role="dialog" aria-labelledby="modal-usuario" style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times-circle"></span></button>
+                <h4 class="modal-title" id="myDefaultModalLabel">Registro de Nuevo Usuario</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label>Usuario</label>
+                        <input type="text" placeholder="Usuario" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email corporativo</label>
+                        <input type="email" placeholder="Ingrese Email Corporativo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Celular Personal</label>
+                        <input type="text" placeholder="Ingrese Celular Personal" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Celular Corporativo</label>
+                        <input type="text" placeholder="Ingrese Celular Corporativo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Registrar</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+@section scripts{
+    @Scripts.Render("~/Scripts/Mantenimiento/jsUsuario.js")
+}
