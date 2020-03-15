@@ -1,0 +1,37 @@
+﻿@if (Model != null)
+{
+    foreach (BE_DYA.BE_MENU objMenuBE in Model)
+    {
+        if (objMenuBE.FLG_VIS_BO == true)
+        {
+            if (objMenuBE.ID_NIV_IN == 0 && objMenuBE.DES_NOM_VC.Length > 0)
+            {
+                <li class="nav-title">@Html.Raw(objMenuBE.DES_NOM_VC)</li>
+            }
+
+            if (objMenuBE.lstMenuBE.Count > 0)
+            {
+                foreach (BE_DYA.BE_MENU objMenuHijoBE in objMenuBE.lstMenuBE)
+                {
+                    <li>
+                        <a href="@Html.Raw(objMenuHijoBE.DES_URL_VC)" title="@Html.Raw(objMenuHijoBE.DES_TIT_VC)" data-filter-tags="@Html.Raw(objMenuHijoBE.DES_TIT_VC)">
+                            <i class="@Html.Raw(objMenuHijoBE.DES_IMA_VC)"></i>
+                            <span class="nav-link-text">@Html.Raw(objMenuHijoBE.DES_NOM_VC)</span>
+                        </a>
+
+                        <ul>
+                            @foreach (BE_DYA.BE_MENU objMenuHijo2BE in objMenuHijoBE.lstMenuBE)
+                            {
+                                <li>
+                                    <a href="@Html.Raw(objMenuHijo2BE.DES_URL_VC)" title="@Html.Raw(objMenuHijo2BE.DES_TIT_VC)" data-filter-tags="@Html.Raw(objMenuHijoBE.DES_TIT_VC)">
+                                        <span class="nav-link-text">@Html.Raw(objMenuHijo2BE.DES_NOM_VC)</span>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                    }
+                }
+            }
+        }
+    }

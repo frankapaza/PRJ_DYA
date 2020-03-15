@@ -133,8 +133,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MantenimientoController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\RolController.cs" />
     <Compile Include="Controllers\SeguridadController.cs" />
     <Compile Include="Controllers\SessionExpireFilterAttribute.cs" />
@@ -676,6 +678,8 @@
     <Content Include="Content\webfonts\summernote.woff" />
     <Content Include="Content\js\funciones.alertas.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Dashboard\Demografico.js" />
+    <Content Include="Scripts\Dashboard\Empresa.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -706,10 +710,14 @@
     <Content Include="Views\Seguridad\IngresoSistema.cshtml" />
     <Content Include="Views\Home\Inicio.cshtml" />
     <Content Include="Views\Mantenimiento\Usuario.cshtml" />
+    <Content Include="Views\Dashboard\Demografico.cshtml" />
+    <Content Include="Views\Dashboard\Empresa.cshtml" />
+    <Content Include="Views\Shared\_Navigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Navigation\" />
     <Folder Include="Views\Rol\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>

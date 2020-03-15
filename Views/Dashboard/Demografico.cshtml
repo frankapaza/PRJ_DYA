@@ -1,0 +1,157 @@
+﻿
+@{
+    ViewBag.Title = "Demografico";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div id="panel-1" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Por ubicación demográfica
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_demografia_ubicacion" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_demografia_ubicacion_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarDemograficoUbicacion();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_demografia_ubicacion" role="tabpanel">
+                            <div id="geochart-colors" style="min-height: 385px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_demografia_ubicacion_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-demografia" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Departamento</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div id="panel-2" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Por sexo
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_demografia_sexo" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_demografia_sexo_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarDemograficoSexo();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_demografia_sexo" role="tabpanel">
+                            <div id="donutchart" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_demografia_sexo_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-sexo" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Sexo</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div id="panel-3" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Por edad
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_demografia_edad" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_demografia_edad_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarDemograficoEdad();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_demografia_edad" role="tabpanel">
+                            <div id="pieEstado" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_demografia_edad_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-edad" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Edad</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    @Scripts.Render("~/Scripts/Dashboard/Demografico.js")
+}
