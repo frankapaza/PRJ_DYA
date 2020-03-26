@@ -1,39 +1,39 @@
 ﻿
 @{
-    ViewBag.Title = "Empresa";
+    ViewBag.Title = "Automotor";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="row">
-    <div class="col-6">
+    <div class="col-12">
         <div id="panel-1" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por ubicación
+                    Por ubicación demográfica
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_ubicacion" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_ubicacion" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_ubicacion_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_ubicacion_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaUbicacion();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarDemograficoUbicacion();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_empresa_ubicacion" role="tabpanel">
-                            <div id="dashboard-ubicacion" style="min-height: 300px;"></div>
+                        <div class="tab-pane fade show active" id="tab_automotor_ubicacion" role="tabpanel">
+                            <div id="dashboard-ubicacion" style="min-height: 385px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_empresa_ubicacion_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_automotor_ubicacion_detalle" role="tabpanel">
                             <div class="table-responsive">
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-ubicacion" width="100%">
                                     <thead>
@@ -52,43 +52,93 @@
             </div>
         </div>
     </div>
+</div>
 
+<div class="row">
     <div class="col-6">
-        <div id="panel-2" class="panel">
+        <div id="panel-1" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por tipo de empresa
+                    Por marca
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_tipo" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_marca" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_tipo_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_marca_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaTipo();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatSeguro();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_empresa_tipo" role="tabpanel">
-                            <div id="dashboard-tipo" style="min-height: 300px;"></div>
+                        <div class="tab-pane fade show active" id="tab_automotor_marca" role="tabpanel">
+                            <div id="dashboard-marca" style="min-height: 300px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_empresa_tipo_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_automotor_marca_detalle" role="tabpanel">
                             <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo" width="100%">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-marca" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Item</th>
-                                            <th>Tipo empresa</th>
+                                            <th>Seguro</th>
                                             <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div id="panel-2" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Por tipo
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_tipo_persona" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_tipo_persona_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatTipo();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_automotor_tipo_persona" role="tabpanel">
+                            <div id="dashboard-tipo-persona" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_automotor_tipo_persona_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo-persona" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Tipo</th>
+                                            <th>Porcentaje</th>
                                         </tr>
                                     </thead>
                                     <tbody></tbody>
@@ -107,38 +157,38 @@
         <div id="panel-3" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por giro de negocio
+                    Por tipo vehiculo
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_giro" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_tipo_vehiculo" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_giro_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_tipo_vehiculo_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaGiro();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatTipoVehiculo();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_empresa_giro" role="tabpanel">
-                            <div id="dashboard-giro" style="min-height: 300px;"></div>
+                        <div class="tab-pane fade show active" id="tab_automotor_tipo_vehiculo" role="tabpanel">
+                            <div id="dashboard-tipo-vehiculo" style="min-height: 300px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_empresa_giro_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_automotor_tipo_vehiculo_detalle" role="tabpanel">
                             <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-giro" width="100%">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo-vehiculo" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Item</th>
-                                            <th>Sexo</th>
-                                            <th>Cantidad</th>
+                                            <th>Tipo Vehiculo</th>
+                                            <th>Porcentaje</th>
                                         </tr>
                                     </thead>
                                     <tbody></tbody>
@@ -154,37 +204,37 @@
         <div id="panel-4" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por estado
+                    Por vencimiento
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_estado" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_anio_fabricacion" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_estado_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_anio_fabricacion_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaEstado();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatVencimiento();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_empresa_estado" role="tabpanel">
-                            <div id="dashboard-estado" style="min-height: 300px;"></div>
+                        <div class="tab-pane fade show active" id="tab_automotor_anio_fabricacion" role="tabpanel">
+                            <div id="dashboard-anio-fabricacion" style="min-height: 300px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_empresa_estado_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_automotor_anio_fabricacion_detalle" role="tabpanel">
                             <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-estado" width="100%">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-anio-fabricacion" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Item</th>
-                                            <th>Edad</th>
+                                            <th>Fecha Vencimiento</th>
                                             <th>Cantidad</th>
                                         </tr>
                                     </thead>
@@ -201,5 +251,5 @@
 
 
 @section scripts{
-    @Scripts.Render("~/Scripts/Dashboard/Empresa.js")
+    @Scripts.Render("~/Scripts/Dashboard/Automotor.js")
 }

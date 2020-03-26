@@ -36,7 +36,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         var ruta_actual = '@Url.Content("~/")';
     </script>
 </head>
-<body class="mod-bg-1 ">
+<body class="mod-bg-1 desktop chrome webkit pace-done nav-function-fixed modal-open blur">
     <!-- DOC: script to save and load page settings -->
     <script>
         /**
@@ -97,11 +97,11 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
             <!-- BEGIN Left Aside -->
             <aside class="page-sidebar">
                 <div class="page-logo">
-                    <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" data-toggle="modal" data-target="#modal-shortcut">
+                    <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" @*data-toggle="modal" data-target="#modal-shortcut"*@>
                         <img src="~/Content/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
-                        <span class="page-logo-text mr-1">SmartAdmin WebApp</span>
+                        <span class="page-logo-text mr-1"> DYA</span>
                         <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
-                        <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
+                        @*<i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>*@
                     </a>
                 </div>
                 <!-- BEGIN PRIMARY NAVIGATION -->
@@ -119,10 +119,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <div class="info-card-text">
                             <a href="#" class="d-flex align-items-center text-white">
                                 <span class="text-truncate text-truncate-sm d-inline-block">
-                                    Dr. Codex Lantern
+                                    @Html.Action("UsuarioNombre", "Navigation")
                                 </span>
                             </a>
-                            <span class="d-inline-block text-truncate text-truncate-sm">Toronto, Canada</span>
+                            <span class="d-inline-block text-truncate text-truncate-sm">
+                                @Html.Action("Perfil", "Navigation")
+                            </span>
                         </div>
                         <img src="~/Content/img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
                         <a href="#" onclick="return false;" class="pull-trigger-btn" data-action="toggle" data-class="list-filter-active" data-target=".page-sidebar" data-focus="nav_filter_input">
@@ -1056,29 +1058,29 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             <i class="ni ni-menu"></i>
                         </a>
                     </div>
-                    <div class="search">
+                    @*<div class="search">
                         <form class="app-forms hidden-xs-down" role="search" action="page_search.html" autocomplete="off">
                             <input type="text" id="search-field" placeholder="Search for anything" class="form-control" tabindex="1">
                             <a href="#" onclick="return false;" class="btn-danger btn-search-close js-waves-off d-none" data-action="toggle" data-class="mobile-search-on">
                                 <i class="fal fa-times"></i>
                             </a>
                         </form>
-                    </div>
+                    </div>*@
                     <div class="ml-auto d-flex">
                         <!-- activate app search icon (mobile) -->
-                        <div class="hidden-sm-up">
+                        @*<div class="hidden-sm-up">
                             <a href="#" class="header-icon" data-action="toggle" data-class="mobile-search-on" data-focus="search-field" title="Search">
                                 <i class="fal fa-search"></i>
                             </a>
-                        </div>
+                        </div>*@
                         <!-- app settings -->
-                        <div class="hidden-md-down">
+                        @*<div class="hidden-md-down">
                             <a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-settings">
                                 <i class="fal fa-cog"></i>
                             </a>
-                        </div>
+                        </div>*@
                         <!-- app shortcuts -->
-                        <div>
+                        @*<div>
                             <a href="#" class="header-icon" data-toggle="dropdown" title="My Apps">
                                 <i class="fal fa-cube"></i>
                             </a>
@@ -1243,14 +1245,14 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div>*@
                         <!-- app message -->
-                        <a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-messenger">
+                        @*<a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-messenger">
                             <i class="fal fa-globe"></i>
                             <span class="badge badge-icon">!</span>
-                        </a>
+                        </a>*@
                         <!-- app notification -->
-                        <div>
+                        @*<div>
                             <a href="#" class="header-icon" data-toggle="dropdown" title="You got 11 notifications">
                                 <i class="fal fa-bell"></i>
                                 <span class="badge badge-icon">11</span>
@@ -1605,7 +1607,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     <a href="#" class="fs-xs fw-500 ml-auto">view all notifications</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>*@
                         <!-- app user menu -->
                         <div>
                             <a href="#" data-toggle="dropdown" title="drlantern@gotbootstrap.com" class="header-icon d-flex align-items-center justify-content-center ml-2">
@@ -1621,8 +1623,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <img src="~/Content/img/demo/avatars/avatar-admin.png" class="rounded-circle profile-image" alt="Dr. Codex Lantern">
                                         </span>
                                         <div class="info-card-text">
-                                            <div class="fs-lg text-truncate text-truncate-lg">Dr. Codex Lantern</div>
-                                            <span class="text-truncate text-truncate-md opacity-80">drlantern@gotbootstrap.com</span>
+                                            <div class="fs-lg text-truncate text-truncate-lg">@Html.Action("UsuarioNombre", "Navigation")</div>
+                                            <span class="text-truncate text-truncate-md opacity-80">@Html.Action("Perfil", "Navigation")</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1658,7 +1660,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 <div class="dropdown-divider m-0"></div>
                                 <a class="dropdown-item fw-500 pt-3 pb-3" href="~/Seguridad/Logout">
                                     <span data-i18n="drpdwn.page-logout">Logout</span>
-                                    <span class="float-right fw-n">&commat;codexlantern</span>
+                                    <span class="float-right fw-n">@Html.Action("Usuario", "Navigation")</span>
                                 </a>
                             </div>
                         </div>
@@ -1675,16 +1677,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 <!-- BEGIN Page Footer -->
                 <footer class="page-footer" role="contentinfo">
                     <div class="d-flex align-items-center flex-1 text-muted">
-                        <span class="hidden-md-down fw-700">2019 © SmartAdmin by&nbsp;<a href='https://www.gotbootstrap.com' class='text-primary fw-500' title='gotbootstrap.com' target='_blank'>gotbootstrap.com</a></span>
+                        <span class="hidden-md-down fw-700">2019 © MANAR PERU by&nbsp;<a href='https://manar.pe' class='text-primary fw-500' title='manar.pe' target='_blank'>manar.pe</a></span>
                     </div>
-                    <div>
+                    @*<div>
                         <ul class="list-table m-0">
                             <li><a href="intel_introduction.html" class="text-secondary fw-700">About</a></li>
                             <li class="pl-3"><a href="info_app_licensing.html" class="text-secondary fw-700">License</a></li>
                             <li class="pl-3"><a href="info_app_docs.html" class="text-secondary fw-700">Documentation</a></li>
                             <li class="pl-3 fs-xl"><a href="https://wrapbootstrap.com/user/MyOrange" class="text-secondary" target="_blank"><i class="fal fa-question-circle" aria-hidden="true"></i></a></li>
                         </ul>
-                    </div>
+                    </div>*@
                 </footer>
                 <!-- END Page Footer -->
                 <!-- BEGIN Shortcuts -->

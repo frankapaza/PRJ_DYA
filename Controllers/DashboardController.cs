@@ -133,5 +133,161 @@ namespace DYA.Controllers
             }
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
+
+        // GET: Automotor
+        public ActionResult Automotor()
+        {
+            return View();
+        }
+
+        /***
+         * AutomotorAnioFabricacion
+         */
+        [HttpPost]
+        public JsonResult AutomotorAnioFabricacion()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.AutomotorAnioFabricacion();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * AutomotorMarca
+         */
+        [HttpPost]
+        public JsonResult AutomotorMarca()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.AutomotorMarca();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * AutomotorTipoPersona
+         */
+        [HttpPost]
+        public JsonResult AutomotorTipoPersona()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.AutomotorTipoPersona();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * AutomotorTipoVehiculo
+         */
+        [HttpPost]
+        public JsonResult AutomotorTipoVehiculo()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.AutomotorTipoVehiculo();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * AutomotorTipoVehiculo
+         */
+        [HttpPost]
+        public JsonResult AutomotorUbicacion()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.AutomotorUbicacion();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        // GET: Soat
+        public ActionResult Soat()  
+        {
+            return View();
+        }
+
+        /***
+         * SoatSeguro
+         */
+        [HttpPost]
+        public JsonResult SoatSeguro()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.SoatSeguro();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * SoatTipo
+         */
+        [HttpPost]
+        public JsonResult SoatTipo()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.SoatTipo();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * SoatTipoVehiculo
+         */
+        [HttpPost]
+        public JsonResult SoatTipoVehiculo()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.SoatTipoVehiculo();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * SoatVencimiento
+         */
+        [HttpPost]
+        public JsonResult SoatVencimiento()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.SoatVencimiento();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
     }
 }
