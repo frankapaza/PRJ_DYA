@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Telecomunicaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div id="panel-1" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Por marketshare
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_telecomunicacion_marketshare" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_telecomunicacion_marketshare_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarTelecomunicacionMarketshare();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_telecomunicacion_marketshare" role="tabpanel">
+                            <div id="dashboard-marketshare" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_telecomunicacion_marketshare_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-marketshare" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Seguro</th>
+                                            <th>Porcentaje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    @Scripts.Render("~/Scripts/Dashboard/Telecomunicaciones.js")
+}

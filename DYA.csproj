@@ -679,10 +679,13 @@
     <Content Include="Content\webfonts\summernote.ttf" />
     <Content Include="Content\webfonts\summernote.woff" />
     <Content Include="Content\js\funciones.alertas.js" />
+    <Content Include="Database\script31032020.sql" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Dashboard\Demografico.js" />
     <Content Include="Scripts\Dashboard\Automotor.js" />
+    <Content Include="Scripts\Dashboard\Medicos.js" />
+    <Content Include="Scripts\Dashboard\Telecomunicaciones.js" />
     <Content Include="Scripts\Dashboard\Soat.js" />
     <Content Include="Scripts\Dashboard\Empresa.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -723,6 +726,8 @@
     <Content Include="Views\Shared\_User.cshtml" />
     <Content Include="Views\Shared\_Username.cshtml" />
     <Content Include="Views\Shared\_Perfil.cshtml" />
+    <Content Include="Views\Dashboard\Medicos.cshtml" />
+    <Content Include="Views\Dashboard\Telecomunicaciones.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

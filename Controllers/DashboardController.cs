@@ -289,5 +289,97 @@ namespace DYA.Controllers
             }
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
+
+        // GET: Medicos
+        public ActionResult Medicos()
+        {
+            return View();
+        }
+
+        /***
+         * MedicosUbicacion
+         */
+        [HttpPost]
+        public JsonResult MedicosUbicacion()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.MedicosUbicacion();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * MedicosEstado
+         */
+        [HttpPost]
+        public JsonResult MedicosEstado()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.MedicosEstado();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * MedicosEspecialidad
+         */
+        [HttpPost]
+        public JsonResult MedicosEspecialidad()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.MedicosEspecialidad();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        /***
+         * MedicosEstado
+         */
+        [HttpPost]
+        public JsonResult MedicosGrado()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.MedicosGrado();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        // GET: Telecomunicaciones
+        public ActionResult Telecomunicaciones()
+        {
+            return View();
+        }
+
+        /***
+         * TelecomunicacionesMarketshare
+         */
+        [HttpPost]
+        public JsonResult TelecomunicacionesMarketshare()
+        {
+            List<BE_DATO> resultado = null;
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                BL_DASHBOARD objDashboardBL = new BL_DASHBOARD();
+                resultado = objDashboardBL.TelecomunicacionesMarketshare();
+            }
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
     }
 }
