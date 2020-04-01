@@ -126,6 +126,7 @@ function ListarMedicoEstado() {
 
                         lstDatosBE.push([obj.DES_DAT_VC, obj.NU_CAN_SI, "#36c"]);
                     });
+
                     lstMedicoEstadoBE = lstDatosBE;
                     google.charts.setOnLoadCallback(DashboardMedicoEstado);
                 }
@@ -198,8 +199,8 @@ function DashboardMedicoEstado() {
     var options = {
         //title: "none",
         //width: 460,
-        //height: 250,
-        //bar: { groupWidth: "90%" },
+        //height: 450,
+        bar: { groupHeight: "5px" },
         legend: { position: "none" }
     };
     var chart = new google.visualization.BarChart(document.getElementById("dashboard-estado"));

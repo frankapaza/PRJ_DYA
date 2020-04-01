@@ -6,6 +6,7 @@
 });
 
 google.charts.load("current", { packages: ["corechart"] });
+google.charts.load("current", { packages: ["line"] });
 
 var lstAutomotorUbicacionBE = null;
 var lstAutomotorMarcaBE = null;
@@ -31,7 +32,7 @@ function ListarAutomotorUbicacion() {
             if (data) {
                 if (data.length > 0) {
                     var lstDatosBE = new Array();
-                    lstDatosBE.push(['Provinces', 'Cantidad']);
+                    lstDatosBE.push(['Provinces', 'Cantidad', { type: 'string', role: 'tooltip' }]);
 
                     $.each(data, function (i, obj) {
                         $("#dt-tabla-ubicacion").dataTable().fnAddData([
@@ -40,7 +41,7 @@ function ListarAutomotorUbicacion() {
                             obj.NU_POR_DO
                         ]);
 
-                        lstDatosBE.push([{ v: obj.ABR_DAT_VC, f: obj.DES_DAT_VC }, obj.NU_POR_DO]);
+                        lstDatosBE.push([{ v: obj.ABR_DAT_VC, f: obj.DES_DAT_VC }, obj.NU_POR_DO, obj.NU_POR_DO + "% "]);
                     });
 
                     lstAutomotorUbicacionBE = lstDatosBE;
@@ -149,16 +150,16 @@ function ListarAutomotorAnioFabricacion() {
             if (data) {
                 if (data.length > 0) {
                     var lstDatosBE = new Array();
-                    lstDatosBE.push(['Vencimiento', 'Cantidad', { role: "style" }]);
-
+                    lstDatosBE.push(['Año Fabricación','Cantidad']);
+                    
                     $.each(data, function (i, obj) {
                         $("#dt-tabla-anio-fabricacion").dataTable().fnAddData([
-                            (i + 1),
-                            obj.DES_DAT_VC,
-                            obj.NU_CAN_SI
+                            (i + 1)
+                            ,obj.DES_DAT_VC
+                            ,obj.NU_CAN_SI
                         ]);
 
-                        lstDatosBE.push([obj.DES_DAT_VC, obj.NU_CAN_SI, "#36c"]);
+                        lstDatosBE.push([obj.DES_DAT_VC, obj.NU_CAN_SI]);
                     });
 
                     lstAutomotorAnioFabricacionBE = lstDatosBE;
@@ -232,25 +233,16 @@ function DashboardAutomotorTipoVehiculo() {
 function DashboardAutomotorAnioFabricacion() {
     var data = google.visualization.arrayToDataTable(lstAutomotorAnioFabricacionBE);
 
-    var view = new google.visualization.DataView(data);
-
-    view.setColumns([0, 1,
-        {
-            calc: "stringify",
-            sourceColumn: 1,
-            type: "string",
-            role: "annotation"
+    /*var options = {
+        chart: {
+            title: 'Vehiculos vendidos por año'//,
+            //subtitle: 'in millions of dollars (USD)'
         },
-        2]);
+        width: 900,
+        height: 500
+    };*/
 
-    var options = {
-        title: "Automotor Año Fabricación",
-        //width: 460,
-        //height: 250,
-        //bar: { groupWidth: "90%" },
-        legend: { position: "none" }
-    };
+    var charFabricacion = new google.charts.Line(document.getElementById('dashboard-anio-fabricacion'));
 
-    var chart = new google.visualization.BarChart(document.getElementById("dashboard-anio-fabricacion"));
-    chart.draw(view, options);
+    charFabricacion.draw(data);
 }

@@ -196,6 +196,6 @@ function DashboardDemograficoEdad() {
         //bar: { groupWidth: "90%" },
         legend: { position: "none" }
     };
-    var chart = new google.visualization.BarChart(document.getElementById("pieEstado"));
+    var chart = new google.visualization.ColumnChart(document.getElementById("pieEstado"));
     chart.draw(view, options);
 }

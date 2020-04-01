@@ -1,4 +1,5 @@
 ﻿google.charts.load("current", { packages: ["corechart"] });
+google.charts.load("current", { packages: ["line"] });
 
 var lstSoatSeguroBE = null;
 var lstSoatTipoBE = null;
@@ -110,7 +111,7 @@ function ListarSoatVencimiento() {
             if (data) {
                 if (data.length > 0) {
                     var lstDatosBE = new Array();
-                    lstDatosBE.push(['Vencimiento', 'Cantidad', { role: "style" }]);
+                    lstDatosBE.push(['Fecha Vencimiento', 'Cantidad']);
 
                     $.each(data, function (i, obj) {
                         $("#dt-tabla-vencimiento").dataTable().fnAddData([
@@ -119,7 +120,7 @@ function ListarSoatVencimiento() {
                             obj.NU_CAN_SI
                         ]);
 
-                        lstDatosBE.push([obj.DES_DAT_VC, obj.NU_CAN_SI, "#36c"]);
+                        lstDatosBE.push([obj.DES_DAT_VC, obj.NU_CAN_SI]);
                     });
 
                     lstSoatVencimientoBE = lstDatosBE;
@@ -171,25 +172,16 @@ function DashboardTipoVehiculo() {
 function DashboardSoatVencimiento() {
     var data = google.visualization.arrayToDataTable(lstSoatVencimientoBE);
 
-    var view = new google.visualization.DataView(data);
-
-    view.setColumns([0, 1,
-        {
-            calc: "stringify",
-            sourceColumn: 1,
-            type: "string",
-            role: "annotation"
+    /*var options = {
+        chart: {
+            title: 'Vehiculos vendidos por año'//,
+            //subtitle: 'in millions of dollars (USD)'
         },
-        2]);
+        width: 900,
+        height: 500
+    };*/
 
-    var options = {
-        //title: "none",
-        //width: 460,
-        //height: 250,
-        //bar: { groupWidth: "90%" },
-        legend: { position: "none" }
-    };
+    var chartVencimiento = new google.charts.Line(document.getElementById('dashboard-vencimiento'));
 
-    var chart = new google.visualization.BarChart(document.getElementById("dashboard-vencimiento"));
-    chart.draw(view, options);
+    chartVencimiento.draw(data);
 }
