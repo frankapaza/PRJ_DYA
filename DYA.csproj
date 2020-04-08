@@ -700,6 +700,8 @@
     <Content Include="Scripts\Mantenimiento\jsUsuario.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Seguridad\jsIngresoSistema.js" />
+    <Content Include="Scripts\Seguridad\jsNuevoUsuario.js" />
+    <Content Include="template.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -728,12 +730,14 @@
     <Content Include="Views\Shared\_Perfil.cshtml" />
     <Content Include="Views\Dashboard\Medicos.cshtml" />
     <Content Include="Views\Dashboard\Telecomunicaciones.cshtml" />
+    <Content Include="Views\Seguridad\NuevoUsuario.cshtml" />
+    <Content Include="Views\Shared\_Empty.cshtml" />
+    <Content Include="Views\Usuario\verificarCorreo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Navigation\" />
     <Folder Include="Views\Rol\" />
-    <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Start\fonts\glyphicons-halflings-regular.woff2" />
@@ -749,20 +753,20 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE_DYA\BE_DYA.csproj">
+    <ProjectReference Include="BE_DYA\BE_DYA.csproj">
       <Project>{1BC07750-FD30-45CF-BDC6-903FFABB5B77}</Project>
       <Name>BE_DYA</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BL_DYA\BL_DYA.csproj">
+    <ProjectReference Include="BL_DYA\BL_DYA.csproj">
       <Project>{CD4ECD63-F48D-4A27-9BF3-1C2296E4D484}</Project>
       <Name>BL_DYA</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DA_DYA\DA_DYA.csproj">
+    <ProjectReference Include="DA_DYA\DA_DYA.csproj">
       <Project>{EC0309EF-F4ED-44FC-95FD-8D3DA78BE026}</Project>
       <Name>DA_DYA</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UTILITARIO\UTILITARIO.csproj">
-      <Project>{18E36FDD-3347-4AF9-B153-0B23C371F442}</Project>
+    <ProjectReference Include="UTILITARIO\UTILITARIO.csproj">
+      <Project>{18e36fdd-3347-4af9-b153-0b23c371f442}</Project>
       <Name>UTILITARIO</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewBag.Title = "NuevoUsuario";
+    Layout = "~/Views/Shared/_Empty.cshtml";
+}
+
+<div class="page-wrapper">
+    <div class="page-inner bg-brand-gradient">
+        <div class="page-content-wrapper bg-transparent m-0">
+            <div class="height-10 w-100 shadow-lg px-4 bg-brand-gradient">
+                <div class="d-flex align-items-center container p-0">
+                    <div class="page-logo width-mobile-auto m-0 align-items-center justify-content-center p-0 bg-transparent bg-img-none shadow-0 height-9">
+                        <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
+                            <img src="~/Content/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
+                            <span class="page-logo-text mr-1">DYA</span>
+                        </a>
+                    </div>
+                    <span class="text-white opacity-50 ml-auto mr-2 hidden-sm-down">
+                        ¿Ya tienes usuario?
+                    </span>
+                    <a href="/Seguridad/IngresoSistema" class="btn-link text-white ml-auto ml-sm-0">
+                        Loguearse
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1" style="background: url(~/Content/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
+                <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h2 class="fs-xxl fw-500 mt-4 text-white text-center">
+                                Registrese ahora, ¡es gratis!
+                                <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down">
+                                    Tu registro tiene 7 dias gratis. Puedes ver el aplicativo en movil, escritorio o tablet.
+                                    <br>¡Es hora de registrarse ahora!
+                                </small>
+                            </h2>
+                        </div>
+                        <div class="col-xl-6 ml-auto mr-auto">
+                            <div class="card p-4 rounded-plus bg-faded">
+                            <div class="alert alert-primary text-dark" role="alert" style="display:none;">
+                                <strong>Heads Up!</strong> Due to server maintenance from 9:30GTA to 12GTA, the verification emails could be delayed by up to 10 minutes.
+                            </div>
+                                
+                            <div class="form-group row">
+                                    <label class="col-xl-12 form-label" for="txt_nombre">Ingrese su Nombre y Apellido</label>
+                                    <div class="col-6 pr-1">
+                                        <input type="text" id="txt_nombre" class="form-control" placeholder="Nombre" required>
+                                        <div class="invalid-feedback">Ingrese su Nombre.</div>
+                                    </div>
+                                    <div class="col-6 pl-1">
+                                        <input type="text" id="txt_apellido" class="form-control" placeholder="Apellido" required>
+                                        <div class="invalid-feedback">Ingrese su Apellido.</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-6 pr-1">
+                                        <input type="text" id="txt_documento" class="form-control" placeholder="Documento" required>
+                                        <div class="invalid-feedback">Ingrese su Documento.</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="txt_email">Ingrese su Email, para verificación y recuperar contraseña</label>
+                                    <input type="email" id="txt_email" class="form-control" placeholder="Email for verification" required>
+                                    <div class="invalid-feedback">Ingrese su Email.</div>
+                                    <div class="help-block" style="display:none;">Your email will also be your username</div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-12 form-label" for="txt_celular">Ingrese su Celular Corporativo y/o Celular Personal</label>
+                                    <div class="col-6 pr-1">
+                                        <input type="text" id="txt_celular" class="form-control" placeholder="Celular" required>
+                                        <div class="invalid-feedback">Ingrese su Celular Corporativo.</div>
+                                    </div>
+                                    <div class="col-6 pl-1">
+                                        <input type="text" id="txt_telefono" class="form-control" placeholder="Teléfono" required>
+                                        <div class="invalid-feedback">Ingrese su Celular Personal.</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-12 form-label" for="txt_usuario">Ingrese su Usuario y Password: <br>Con estas credenciales usted podra ingresar al aplicativo.</label>
+                                    <div class="col-6 pr-1">
+                                        <input type="text" id="txt_usuario" class="form-control" placeholder="Usuario" required>
+                                        <div class="invalid-feedback">Ingrese su Usuario.</div>
+                                    </div>
+                                    <div class="col-6 pl-1">
+                                        <input type="password" id="txt_password" class="form-control" placeholder="Password" required>
+                                        <div class="invalid-feedback">Ingrese su Password.</div>
+                                    </div>
+                                </div>
+                                <div class="form-group demo">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk_terminos_condiciones" required>
+                                        <label class="custom-control-label" for="chk_terminos_condiciones"> Acepto los terminos y condiciones</label>
+                                        <div class="invalid-feedback">Acepte los terminos y condiciones.</div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="display:none;">
+                                        <input type="checkbox" class="custom-control-input" id="newsletter">
+                                        <label class="custom-control-label" for="newsletter">Sign up for newsletters (dont worry, we won't send so many)</label>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters">
+                                    <div class="col-md-4 ml-auto text-right">
+                                        <button id="btn_registrar" type="submit" class="btn btn-block btn-danger btn-lg mt-3">Enviar Verificación</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">
+                    2020 © Manar PERÚ
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    @Scripts.Render("~/Scripts/Seguridad/jsNuevoUsuario.js")
+}

@@ -10,7 +10,13 @@ namespace DYA.Controllers
 {
     public class SeguridadController : Controller
     {
-        // GET: Seguridad
+        // GET: Nuevo Usuario
+        public ActionResult NuevoUsuario()
+        {
+            return View();
+        }
+
+        // GET: Ingreso Sistema
         public ActionResult IngresoSistema()
         {
             return View();

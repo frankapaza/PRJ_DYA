@@ -28,6 +28,40 @@ namespace DYA.Controllers
         }
 
         /***
+         * REGISTRAR USUARIO VERIFICACION
+         */
+        [HttpPost]
+        public JsonResult registrarVerificacion(BE_USUARIO objUsuarioBE)
+        {
+            bool resultado = false;
+            BL_USUARIO objUsuarioBL = new BL_USUARIO();
+            resultado = objUsuarioBL.registrarVerificacion(objUsuarioBE);
+
+            if (resultado) {
+                Dictionary<string, string> correos = new Dictionary<string, string>();
+                correos.Add(objUsuarioBE.COR_COR_VC, objUsuarioBE.NOM_PER_VC + " " + objUsuarioBE.APE_PER_VC);
+
+                UTILITARIO.EMAIL.enviarCorreo(correos, 
+                    "Verificación de Correo | DYA, Usuario: " + objUsuarioBE.LOG_USU_VC,
+                    "Bienvenido " + objUsuarioBE.NOM_PER_VC + " " + objUsuarioBE.APE_PER_VC, 
+                    "Para validar su correo haga click <a href='" + 
+                    "https://localhost:44357/Usuario/verificarCorreo?p=" + objUsuarioBE.ID_USU_IN_CRYPT + "'>Aquí</a>,ó ingresar a la siguiente ruta " +
+                    "https://localhost:44357/Usuario/verificarCorreo?p=" + objUsuarioBE.ID_USU_IN_CRYPT, "MANAR PERU");
+            }
+
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult verificarCorreo(string p)
+        {
+            bool resultado = false;
+            BL_USUARIO objUsuarioBL = new BL_USUARIO();
+            resultado = objUsuarioBL.verificarCorreo(p);
+            return View();
+        }
+
+        /***
          * LISTAR USUARIO
          */
         [HttpPost]
