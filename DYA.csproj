@@ -495,6 +495,7 @@
     <Content Include="Content\webfonts\fa-regular-400.svg" />
     <Content Include="Content\webfonts\fa-solid-900.svg" />
     <Content Include="Content\webfonts\nextgen-icons.svg" />
+    <Content Include="Database\script07042020.sql" />
     <Content Include="Database\script08032020.sql" />
     <Content Include="Database\script15032020.sql" />
     <Content Include="Database\script26032020.sql" />

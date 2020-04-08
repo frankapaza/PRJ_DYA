@@ -77,7 +77,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
                         <div class="tab-pane fade show active" id="tab_empresa_tipo" role="tabpanel">
                             <div id="dashboard-tipo" style="min-height: 300px;"></div>
                         </div>
@@ -127,7 +127,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
                         <div class="tab-pane fade show active" id="tab_empresa_giro" role="tabpanel">
                             <div id="dashboard-giro" style="min-height: 300px;"></div>
                         </div>
@@ -174,7 +174,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
                         <div class="tab-pane fade show active" id="tab_empresa_estado" role="tabpanel">
                             <div id="dashboard-estado" style="min-height: 300px;"></div>
                         </div>

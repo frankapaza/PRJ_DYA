@@ -11,8 +11,14 @@ namespace DYA.Controllers
     public class DashboardController : Controller
     {
         // GET: Demografico
+        [SessionExpireFilter]
         public ActionResult Demografico()
         {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
             return View();
         }
 
@@ -65,8 +71,14 @@ namespace DYA.Controllers
         }
 
         // GET: Empresas
+        [SessionExpireFilter]
         public ActionResult Empresa()
         {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
             return View();
         }
 
@@ -135,8 +147,14 @@ namespace DYA.Controllers
         }
 
         // GET: Automotor
+        [SessionExpireFilter]
         public ActionResult Automotor()
         {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
             return View();
         }
 
@@ -221,8 +239,14 @@ namespace DYA.Controllers
         }
 
         // GET: Soat
+        [SessionExpireFilter]
         public ActionResult Soat()  
         {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
             return View();
         }
 
@@ -291,8 +315,14 @@ namespace DYA.Controllers
         }
 
         // GET: Medicos
+        [SessionExpireFilter]
         public ActionResult Medicos()
         {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
             return View();
         }
 
@@ -361,8 +391,14 @@ namespace DYA.Controllers
         }
 
         // GET: Telecomunicaciones
+        [SessionExpireFilter]
         public ActionResult Telecomunicaciones()
         {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
             return View();
         }
 
