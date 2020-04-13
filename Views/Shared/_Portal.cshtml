@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>DYA</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="~/Content/portal/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="~/Content/portal/css/font-awesome-all.css" rel="stylesheet">
+    <link href="~/Content/portal/css/flaticon.css" rel="stylesheet">
+    <link href="~/Content/portal/css/my-flaticon/flaticon.css" rel="stylesheet">
+    <link href="~/Content/portal/css/owl.css" rel="stylesheet">
+    <link href="~/Content/portal/css/bootstrap.css" rel="stylesheet">
+    <link href="~/Content/portal/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="~/Content/portal/css/animate.css" rel="stylesheet">
+    <link href="~/Content/portal/css/imagebg.css" rel="stylesheet">
+    <link href="~/Content/portal/css/global.css" rel="stylesheet">
+    <link href="~/Content/portal/css/header.css" rel="stylesheet">
+    <link href="~/Content/portal/css/color.css" rel="stylesheet">
+    <link href="~/Content/portal/css/style.css" rel="stylesheet">
+    <link href="~/Content/portal/css/responsive.css" rel="stylesheet">
+
+    <script>
+        var ruta_actual = '@Url.Content("~/")';
+    </script>
+
+    <style type="text/css">
+        .modal-login {
+            color: #636363;
+            width: 350px;
+        }
+
+            .modal-login .modal-content {
+                padding: 20px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .modal-login .modal-header {
+                border-bottom: none;
+                position: relative;
+                justify-content: center;
+            }
+
+            .modal-login h4 {
+                text-align: center;
+                font-size: 26px;
+            }
+
+            .modal-login .form-group {
+                position: relative;
+            }
+
+            .modal-login i {
+                position: absolute;
+                left: 13px;
+                top: 11px;
+                font-size: 18px;
+            }
+
+            .modal-login .form-control {
+                padding-left: 40px;
+            }
+
+                .modal-login .form-control:focus {
+                    border-color: #00ce81;
+                }
+
+            .modal-login .form-control, .modal-login .btn {
+                min-height: 40px;
+                border-radius: 3px;
+            }
+
+            .modal-login .hint-text {
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .modal-login .close {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+            }
+
+            .modal-login .btn {
+                background: #00ce81;
+                border: none;
+                line-height: normal;
+            }
+
+                .modal-login .btn:hover, .modal-login .btn:focus {
+                    background: #00bf78;
+                }
+
+            .modal-login .modal-footer {
+                background: #ecf0f1;
+                border-color: #dee4e7;
+                text-align: center;
+                margin: 0 -20px -20px;
+                border-radius: 5px;
+                font-size: 13px;
+                justify-content: center;
+            }
+
+                .modal-login .modal-footer a {
+                    color: #999;
+                }
+
+        body {
+            padding-right: 0 !important
+        }
+    </style>
+
+</head>
+
+
+<body class="boxed_wrapper">
+    <!-- preloader -->
+    <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="y" class="letters-loading">
+                        y
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+    <!-- search-popup -->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search"><span>Cerrar</span></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Buscar aqui" required>
+                            <input type="submit" value="Buscar" class="theme-btn style-four">
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- search-popup end -->
+
+    <header class="main-header style-one home-1">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-12 col-sm-12 logo-column">
+                    <div class="logo-box style-two">
+                        <figure class="logo">
+                            <a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 165px;"></a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 outer-column">
+                    <div class="outer-box">
+                        <div class="header-top clearfix">
+                            <div class="top-right pull-right clearfix">
+                                <div class="support" style="margin-top: 2px;"><span>Contáctenos por: </span></div>
+                                <ul class="social-links clearfix">
+                                    <li><a href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                                <div class="search-box-outer">
+                                    <form action="index.html" method="post" class="search-btn">
+                                        <button type="button" class="search-toggler"><i class="flaticon-search"></i>Buscar</button>
+                                    </form>
+                                </div>
+                                <div class="support" style="margin-top: 4px; margin-left: 14px;">
+                                    <a href="https://localhost:44357/Seguridad/NuevoUsuario">Registrarse</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-upper clearfix">
+                            <div class="menu-area pull-right clearfix">
+                                <!--Mobile Navigation Toggler-->
+                                <div class="mobile-nav-toggler">
+                                    <i class="icon-bar"></i>
+                                    <i class="icon-bar"></i>
+                                    <i class="icon-bar"></i>
+                                </div>
+                                <nav class="main-menu navbar-expand-md navbar-light">
+                                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                        <ul class="navigation scroll-nav clearfix">
+                                            <li><a href="#sec_principal">Principal</a></li>
+                                            <li><a href="#sec_industria">Negocio</a></li>
+                                            <li class="dropdown">
+                                                <a href="javascript:void(0)">Acerca de</a>
+                                                <ul>
+                                                    <li><a href="#sec_acerca_de">Sobre la plataforma<i class="flaticon-next"></i></a></li>
+                                                    <li><a href="#sec_vis_mis">Misión / Visión<i class="flaticon-next"></i></a></li>
+                                                    <li><a href="#sec_legalidad">Legalidad<i class="flaticon-next"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="javascript:void(0)">Accesibilidad</a>
+                                                <ul>
+                                                    <li><a href="#" data-toggle="modal" data-target=".modalVipPremium">Cuenta Premium<i class="flaticon-next"></i></a></li>
+                                                    <li><a href="#sec_membresia">Tipos de Membresia<i class="flaticon-next"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#sec_contacto">Contáctanos</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+                <figure class="logo-box"><a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 80px;"></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav>
+                    <div class="btn-box">
+                        <a href="https://localhost:44357/Seguridad/NuevoUsuario" class="theme-btn style-one">Registrate Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-header end -->
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="~/Content/portal/images/logo.png" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Chicago 12, Melborne City, USA</li>
+                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Mobile Menu -->
+
+    @RenderBody()
+
+    <!-- jequery plugins -->
+    <script src="~/Content/portal/js/jquery.js"></script>
+    <script src="~/Content/portal/js/popper.min.js"></script>
+    <script src="~/Content/portal/js/bootstrap.min.js"></script>
+    <script src="~/Content/portal/js/owl.js"></script>
+    <script src="~/Content/portal/js/wow.js"></script>
+    <script src="~/Content/portal/js/validation.js"></script>
+
+    <script src="~/Content/portal/js/jquery.fancybox.js"></script>
+    <script src="~/Content/portal/js/appear.js"></script>
+    <script src="~/Content/portal/js/jquery.countTo.js"></script>
+    <script src="~/Content/portal/js/scrollbar.js"></script>
+    <script src="~/Content/portal/js/tilt.jquery.js"></script>
+    <script src="~/Content/portal/js/pagenav.js"></script>
+    <!-- main-js -->
+    <script src="~/Content/portal/js/script.js"></script>
+
+    <script type="text/javascript">
+        $('[data-fancybox]').fancybox({
+            protect: true
+        });
+
+        function desapareceInfo() {
+            $('#info').fadeOut(500);
+        }
+        function enviarCorreo() {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var area = $('#area option:selected').text();
+            var industria = $('#industria option:selected').text();
+            var subject = $('#subject option:selected').text();
+            var message = $('#message').val();
+
+            name = jQuery.trim(name);
+            email = jQuery.trim(email);
+            subject = jQuery.trim(subject);
+            message = jQuery.trim(message);
+
+            function validateEmail(email) {
+                var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+                return emailReg.test(email);
+            }
+
+            if (!validateEmail(email)) {
+                $('#email').val(email);
+            } else {
+                if (name == "" || email == "" || subject == "" || message == "") exit();
+                $.ajax({
+                    type: "POST",
+                    url: "send.php",
+                    data: $('#contact-form').serialize(),
+                    success: function (cevap) {
+                        alert("Se envio exitosamente el correo.");
+                    }
+                });
+            }
+        }
+    </script>
+
+</body><!-- End of .page_wrapper -->
+</html>

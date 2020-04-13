@@ -7,113 +7,120 @@
 <div class="page-wrapper">
     <div class="page-inner bg-brand-gradient">
         <div class="page-content-wrapper bg-transparent m-0">
-            <div class="height-10 w-100 shadow-lg px-4 bg-brand-gradient">
+            <nav class="height-10 w-100 shadow-lg px-4" style="background-color: #FFF !important; ">
                 <div class="d-flex align-items-center container p-0">
                     <div class="page-logo width-mobile-auto m-0 align-items-center justify-content-center p-0 bg-transparent bg-img-none shadow-0 height-9">
-                        <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
-                            <img src="~/Content/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
-                            <span class="page-logo-text mr-1">DYA</span>
+                        <a href="https://localhost:44357/" class="page-logo-link" style="margin-right: 150px;">
+                            <img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 80px;">
                         </a>
                     </div>
-                    <span class="text-white opacity-50 ml-auto mr-2 hidden-sm-down">
+                    <span class="ml-auto mr-2 hidden-sm-down">
                         ¿Ya tienes usuario?
                     </span>
-                    <a href="/Seguridad/IngresoSistema" class="btn-link text-white ml-auto ml-sm-0">
-                        Loguearse
-                    </a>
+                    <a href="https://localhost:44357/Seguridad/IngresoSistema" class="ml-auto ml-sm-0">Loguearse</a>
                 </div>
-            </div>
-            <div class="flex-1" style="background: url(~/Content/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
-                <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <h2 class="fs-xxl fw-500 mt-4 text-white text-center">
-                                Registrese ahora, ¡es gratis!
-                                <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down">
-                                    Tu registro tiene 7 dias gratis. Puedes ver el aplicativo en movil, escritorio o tablet.
-                                    <br>¡Es hora de registrarse ahora!
-                                </small>
-                            </h2>
+            </nav>
+            <section class="industries-section" id="sec_industria" style="padding: 95px 0px 55px 0px !important;">
+                <div class="pattern-layer">
+                    <div class="pattern-1" style="background-image: url(https://localhost:44357/Content/portal/images/shape/shape-57.png);"></div>
+                    <div class="pattern-2" style="background-image: url(https://localhost:44357/Content/portal/images/shape/shape-58.png);"></div>
+                </div>
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                            <div class="content-box">
+                                <div class="sec-title text-center light">
+                                    <h2 class="fs-xxl fw-500 text-white">
+                                        Registrese ahora, ¡es gratis!
+                                        <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down" style="font-size: 22px;">
+                                            Tu registro tiene 7 dias gratis. Puedes ver el aplicativo en movil, escritorio o tablet.
+                                            <br>¡Es hora de registrarse ahora!
+                                        </small>
+                                    </h2>
+                                    <div class="decor" style="background-image: url(https://localhost:44357/Content/portal/images/icons/decor-2.png); margin-top: 10px;"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xl-6 ml-auto mr-auto">
-                            <div class="card p-4 rounded-plus bg-faded">
-                            <div class="alert alert-primary text-dark" role="alert" style="display:none;">
-                                <strong>Heads Up!</strong> Due to server maintenance from 9:30GTA to 12GTA, the verification emails could be delayed by up to 10 minutes.
+                        <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                            <div id="content_block_09">
+                                <div class="content-box">
+                                    <div id="contact-form" class="default-form" style="padding: 40px 50px 56px 50px;">
+                                        <div class="form-row">
+                                            <label class="col-xl-12 form-label" for="txt_nombre">Datos personales:</label>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-user"></i>Tu primer nombre</label>
+                                                <input type="text" id="txt_nombre" class="form-control" placeholder="Ingrese nombre" required>
+                                                <div class="invalid-feedback">Debe ingresar un nombre.</div>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-envelope"></i>Apellido</label>
+                                                <input type="text" id="txt_apellido" class="form-control" placeholder="Ingrese apellido" required>
+                                                <div class="invalid-feedback">Debe ingresar su apellido.</div>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-envelope"></i>Nro. Documento</label>
+                                                <input type="text" id="txt_documento" class="form-control" pattern="[1-9]{8}" placeholder="Ingrese su DNI" maxlength="8"
+                                                       title="Debe ingresar correctamente 8 digitos.">
+                                                <div class="invalid-feedback">Debe ingresar su numero de documento.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <label class="col-xl-12 form-label" for="txt_nombre">Datos de contacto:</label>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-user"></i>Correo electronico</label>
+                                                <input type="email" id="txt_email" class="form-control" placeholder="Ingrese email" required>
+                                                <div class="invalid-feedback">Ingrese su email.</div>
+                                                <div class="help-block" style="display:none;">Your email will also be your username</div>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-envelope"></i>Celular</label>
+                                                <input type="text" id="txt_celular" class="form-control" placeholder="Ingrese celular corporativo" required>
+                                                <div class="invalid-feedback">Ingrese su celular corporativo.</div>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-envelope"></i>Telefono (Opcional)</label>
+                                                <input type="text" id="txt_telefono" class="form-control" placeholder="Ingrese telefono personal">
+                                            </div>
+                                        </div>
+                                        <div class="form-row" style="margin-top: 10px;">
+                                            <label class="col-xl-12 form-label" for="txt_usuario">Ingrese su Usuario y Password: <br>Con estas credenciales usted podra ingresar al aplicativo.</label>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-user"></i>Usuario</label>
+                                                <input type="text" id="txt_usuario" class="form-control" placeholder="Ingrese nombre de usuario" required>
+                                                <div class="invalid-feedback">Ingrese un nombre de usuario.</div>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label><i class="far fa-envelope"></i>Contraseña</label>
+                                                <input type="password" id="txt_password" class="form-control" placeholder="Ingrese contraseña" style="height: 55px;" required>
+                                                <div class="invalid-feedback">Campo obligatorio. Debe ingresar una contraseña.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="chk_terminos_condiciones" required>
+                                                <label class="custom-control-label" for="chk_terminos_condiciones"> Acepto los terminos y condiciones</label>
+                                                <div class="invalid-feedback">Debe aceptar los terminos y condiciones para poder registrarse.</div>
+                                            </div>
+                                            <div class="custom-control custom-checkbox" style="display:none;">
+                                                <input type="checkbox" class="custom-control-input" id="newsletter">
+                                                <label class="custom-control-label" for="newsletter">Sign up for newsletters (dont worry, we won't send so many)</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="padding-top: 18px;">
+                                            <button class="theme-btn style-one" id="btn_registrar" type="submit">Enviar verificación</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                                
-                            <div class="form-group row">
-                                    <label class="col-xl-12 form-label" for="txt_nombre">Ingrese su Nombre y Apellido</label>
-                                    <div class="col-6 pr-1">
-                                        <input type="text" id="txt_nombre" class="form-control" placeholder="Nombre" required>
-                                        <div class="invalid-feedback">Ingrese su Nombre.</div>
-                                    </div>
-                                    <div class="col-6 pl-1">
-                                        <input type="text" id="txt_apellido" class="form-control" placeholder="Apellido" required>
-                                        <div class="invalid-feedback">Ingrese su Apellido.</div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-6 pr-1">
-                                        <input type="text" id="txt_documento" class="form-control" placeholder="Documento" required>
-                                        <div class="invalid-feedback">Ingrese su Documento.</div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="txt_email">Ingrese su Email, para verificación y recuperar contraseña</label>
-                                    <input type="email" id="txt_email" class="form-control" placeholder="Email for verification" required>
-                                    <div class="invalid-feedback">Ingrese su Email.</div>
-                                    <div class="help-block" style="display:none;">Your email will also be your username</div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-xl-12 form-label" for="txt_celular">Ingrese su Celular Corporativo y/o Celular Personal</label>
-                                    <div class="col-6 pr-1">
-                                        <input type="text" id="txt_celular" class="form-control" placeholder="Celular" required>
-                                        <div class="invalid-feedback">Ingrese su Celular Corporativo.</div>
-                                    </div>
-                                    <div class="col-6 pl-1">
-                                        <input type="text" id="txt_telefono" class="form-control" placeholder="Teléfono" required>
-                                        <div class="invalid-feedback">Ingrese su Celular Personal.</div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-xl-12 form-label" for="txt_usuario">Ingrese su Usuario y Password: <br>Con estas credenciales usted podra ingresar al aplicativo.</label>
-                                    <div class="col-6 pr-1">
-                                        <input type="text" id="txt_usuario" class="form-control" placeholder="Usuario" required>
-                                        <div class="invalid-feedback">Ingrese su Usuario.</div>
-                                    </div>
-                                    <div class="col-6 pl-1">
-                                        <input type="password" id="txt_password" class="form-control" placeholder="Password" required>
-                                        <div class="invalid-feedback">Ingrese su Password.</div>
-                                    </div>
-                                </div>
-                                <div class="form-group demo">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="chk_terminos_condiciones" required>
-                                        <label class="custom-control-label" for="chk_terminos_condiciones"> Acepto los terminos y condiciones</label>
-                                        <div class="invalid-feedback">Acepte los terminos y condiciones.</div>
-                                    </div>
-                                    <div class="custom-control custom-checkbox" style="display:none;">
-                                        <input type="checkbox" class="custom-control-input" id="newsletter">
-                                        <label class="custom-control-label" for="newsletter">Sign up for newsletters (dont worry, we won't send so many)</label>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="col-md-4 ml-auto text-right">
-                                        <button id="btn_registrar" type="submit" class="btn btn-block btn-danger btn-lg mt-3">Enviar Verificación</button>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">
-                    2020 © Manar PERÚ
-                </div>
-            </div>
+            </section>
+
         </div>
     </div>
 </div>
-
 
 @section scripts{
     @Scripts.Render("~/Scripts/Seguridad/jsNuevoUsuario.js")
