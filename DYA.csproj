@@ -134,6 +134,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MantenimientoController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
@@ -1218,6 +1219,7 @@
     <Content Include="Views\Usuario\verificarCorreo.cshtml" />
     <Content Include="Views\Shared\_Portal.cshtml" />
     <Content Include="Views\Portal\ContenidoPortal.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -33,6 +33,11 @@ namespace BL_DYA
             objUsuarioDA.login(objUsuarioBE);
         }
 
+        public void loguearsePorIdUsuario(BE_USUARIO objUsuarioBE)
+        {
+            objUsuarioDA.loguearsePorIdUsuario(objUsuarioBE);
+        }
+        
         public List<BE_USUARIO> listar(BE_FILTRO objFiltroBE)
         {
             return objUsuarioDA.listar(objFiltroBE);
