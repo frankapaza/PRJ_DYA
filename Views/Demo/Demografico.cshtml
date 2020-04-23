@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Demografico";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Demo.cshtml";
 }
 
 <ol class="breadcrumb page-breadcrumb">
@@ -92,7 +92,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 tab-print">
                         <div class="tab-pane fade show active" id="tab_demografia_sexo" role="tabpanel">
                             <div id="donutchart" style="min-height: 300px;"></div>
                         </div>
@@ -139,7 +139,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 tab-print">
                         <div class="tab-pane fade show active" id="tab_demografia_edad" role="tabpanel">
                             <div id="pieEstado" style="min-height: 300px;"></div>
                         </div>
@@ -171,7 +171,6 @@
     </div>
 </div>
 
-
 @section scripts{
-    @Scripts.Render("~/Scripts/Dashboard/Demografico.js")
+    @Scripts.Render("~/Scripts/Demo/Demografico.js")
 }

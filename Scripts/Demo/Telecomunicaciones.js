@@ -35,9 +35,11 @@ function ListarTelecomunicacionMarketshare() {
     });
 }
 
+
+
 function DashboardTelecomunicacionMarketshare() {
     var data = google.visualization.arrayToDataTable(lstTelecomunicacionMarketshareBE);
-    
+
     var options = {
         //title: 'Soat Seguro',
         is3D: true,

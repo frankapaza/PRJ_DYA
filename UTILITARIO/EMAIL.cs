@@ -65,5 +65,41 @@ namespace UTILITARIO
                 smtpClient.Disconnect(true);
             }*/
         }
+
+        public static int contactarDya(string Nombre, string Email, string Area, string Sector, string Tema, string Cuerpo_Contenido)
+        {
+            try
+            {
+                String directorio = AppDomain.CurrentDomain.BaseDirectory;
+                String hostName = Dns.GetHostName();
+                MailMessage EmailMsg = new MailMessage();
+                EmailMsg.From = new MailAddress(Email, Nombre);
+                EmailMsg.ReplyToList.Add(new MailAddress(Email));
+                EmailMsg.To.Add("contacto@dya.pe");
+                
+                EmailMsg.Subject = Sector + " - " + Tema;
+                EmailMsg.Body = "Recibido por: " + Email + "<br> " +
+                                "Nombre del sector: <bold> " + Sector + " </bold><br> " +
+                                "Area: " + Area + " <br> Tema elegido: " + Tema + " <br><br> " + 
+                                Cuerpo_Contenido +" <br><hr> Atte:. " + Nombre;
+                EmailMsg.IsBodyHtml = true;
+                EmailMsg.Priority = MailPriority.Normal;
+                
+                SmtpClient MailClient = new SmtpClient("smtp.gmail.com", 587);//465
+                MailClient.EnableSsl = true;
+                MailClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                //MailClient.Credentials = new System.Net.NetworkCredential("sistemas@manar.pe", "manar2030.20");
+                MailClient.Credentials = new System.Net.NetworkCredential("contacto@dya.pe", "dya.2030");
+                MailClient.Send(EmailMsg);
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return -1;
+            }
+
+        }
+
     }
 }

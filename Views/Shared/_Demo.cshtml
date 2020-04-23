@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     </script>
     <meta charset="utf-8">
     <title>
-        DyA Dashboard
+        DyA Live Demo
     </title>
     <meta name="description" content="Page Titile">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +31,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <!-- base css -->
     <link rel="stylesheet" media="screen, print" href="~/Content/css/vendors.bundle.css">
     <link rel="stylesheet" media="screen, print" href="~/Content/css/app.bundle.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" sizes="180x180" href="~/Content/img/favicon/apple-touch-icon.png">
     <link rel="icon" href="~/Content/portal/images/logotipos-06-icon.ico" type="image/x-icon">
@@ -127,11 +128,11 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <div class="info-card-text">
                             <a href="#" class="d-flex align-items-center text-white">
                                 <span class="text-truncate text-truncate-sm d-inline-block">
-                                    Bienvenido a DyA
+                                    Bienvenido a
                                 </span>
                             </a>
                             <span class="d-inline-block text-truncate text-truncate-sm">
-                                @Html.Action("UsuarioNombre", "Navigation")
+                                DyA
                             </span>
                         </div>
                         <img src="~/Content/img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
@@ -1004,30 +1005,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <div class="filter-message js-filter-message bg-success-600"></div>
                 </nav>
                 <!-- END PRIMARY NAVIGATION -->
-                <!-- NAV FOOTER -->
-                @*<div class="nav-footer shadow-top">
-                        <a href="#" onclick="return false;" data-action="toggle" data-class="nav-function-minify" class="hidden-md-down">
-                            <i class="ni ni-chevron-right"></i>
-                            <i class="ni ni-chevron-right"></i>
-                        </a>
-                        <ul class="list-table m-auto nav-footer-buttons">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Chat logs">
-                                    <i class="fal fa-comments"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Support Chat">
-                                    <i class="fal fa-life-ring"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Make a call">
-                                    <i class="fal fa-phone"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- END NAV FOOTER -->*@
             </aside>
             <!-- END Left Aside -->
             <div class="page-content-wrapper">
@@ -1036,7 +1013,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- we need this logo when user switches to nav-function-top -->
                     <div class="page-logo">
                         <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" data-toggle="modal" data-target="#modal-shortcut">
-                            <img src="~/Content/portal/images/logotipos-06.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
+                            <img src="~/Content/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
                             <span class="page-logo-text mr-1">SmartAdmin WebApp</span>
                             <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
                             <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
@@ -1054,7 +1031,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="btn js-waves-off active" data-action="toggle" data-class="nav-function-fixed" title="Lock Navigation">
+                                <a href="javascript:void(0)" class="btn js-waves-off active" data-action="toggle" data-class="nav-function-fixed"
+                                   title="Lock Navigation" id="btnLockNavigation">
                                     <i class="ni ni-lock-nav"></i>
                                 </a>
                             </li>
@@ -1087,6 +1065,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     <i class="fal fa-cog"></i>
                                 </a>
                             </div>*@
+                        <!-- app settings -->
                         <!-- app shortcuts -->
                         @*<div>
                                 <a href="#" class="header-icon" data-toggle="dropdown" title="My Apps">
@@ -1632,7 +1611,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                         </span>
                                         <div class="info-card-text">
                                             <div class="fs-lg text-truncate text-truncate-lg">Cliente</div>
-                                            <span class="text-truncate text-truncate-md opacity-80">@Html.Action("UsuarioNombre", "Navigation")</span>
+                                            <span class="text-truncate text-truncate-md opacity-80"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1666,15 +1645,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                         </div>
                                     </div>*@
                                 <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-item fw-500 pt-3 pb-3" href="~/Seguridad/Logout">
+                                @*<a class="dropdown-item fw-500 pt-3 pb-3" href="javascript:void(0)">
                                     <span data-i18n="drpdwn.page-logout">Cerrar Sesión</span>
-                                </a>
+                                </a>*@
                             </div>
                         </div>
                     </div>
                 </header>
                 <!-- END Page Header -->
                 <!-- BEGIN Page Content -->
+                <!-- the #js-page-content id is needed for some plugins to initialize -->
                 <main id="js-page-content" role="main" class="page-content">
                     @RenderBody()
                 </main>
@@ -1748,28 +1728,22 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <!-- END Page Wrapper -->
     <!-- BEGIN Quick Menu -->
     <!-- to add more items, please make sure to change the variable '$menu-items: number;' in your _page-components-shortcut.scss -->
-    <nav class="shortcut-menu d-none d-sm-block">
-        <input type="checkbox" class="menu-open" name="menu-open" id="menu_open" />
-        <label for="menu_open" class="menu-open-button ">
-            <span class="app-shortcut-icon d-block"></span>
-        </label>
-        <a href="#" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Scroll Top">
-            <i class="fal fa-arrow-up"></i>
-        </a>
-        <a href="/Seguridad/Logout" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Logout">
-            <i class="fal fa-sign-out"></i>
-        </a>
-        <a href="#" class="menu-item btn" data-action="app-fullscreen" data-toggle="tooltip" data-placement="left" title="Full Screen">
-            <i class="fal fa-expand"></i>
-        </a>
-        <a href="#" class="menu-item btn" data-action="app-print" data-toggle="tooltip" data-placement="left" title="Print page">
-            <i class="fal fa-print"></i>
-        </a>
-        <a href="#" class="menu-item btn" data-action="app-voice" data-toggle="tooltip" data-placement="left" title="Voice command">
-            <i class="fal fa-microphone"></i>
-        </a>
+    <nav id="nav_registrar" class="shortcut-menu d-none d-sm-block">
+        <div class="card m-auto m-lg-0" style="max-width: 18rem; padding: 15px 0px;
+            background-image: url(https://localhost:44357/Content/portal/images/shape/shape-57.png);">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="color: #fff;">Versión Prueba de DyA</h5>
+                <p class="card-text text-white opacity-60" style="color: #fff;">
+                    Si desea ver más contenido acerca de todos los sectores del Perú,
+                    haga click en el botón <strong>Registrarse Ahora</strong> para crearse una cuenta propia.
+                </p>
+                <a id="btnRegistrarse" class="btn btn-success" href="https://localhost:44357/Seguridad/NuevoUsuario"
+                   role="button" style="margin-top: 13px;"><i class="fa fa-pencil"></i>&nbsp;&nbsp;Registrarse ahora</a>
+            </div>
+        </div>
     </nav>
     <!-- END Quick Menu -->
+    <!--Registrarse-->
     <!-- BEGIN Messenger -->
     <div class="modal fade js-modal-messenger modal-backdrop-transparent" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-right">

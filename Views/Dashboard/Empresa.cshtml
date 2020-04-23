@@ -4,12 +4,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<ol class="breadcrumb page-breadcrumb">
+    <li class="breadcrumb-item"><a href="javascript:void(0);">Inicio</a></li>
+    <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item active">Empresa</li>
+    <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date" id="fecha"></span></li>
+</ol>
+
+<div class="subheader">
+    <h1 class="subheader-title">
+        <i class="subheader-icon fal fa-chart-area"></i> Dashboard <span class="fw-300">Empresa</span>
+    </h1>
+</div>
+
 <div class="row">
-    <div class="col-6">
+    <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="panel-1" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por ubicación
+                    Ubicación geográfica
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
@@ -38,7 +51,7 @@
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-ubicacion" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Item</th>
+                                            <th>Nro. item</th>
                                             <th>Departamento</th>
                                             <th>Cantidad</th>
                                         </tr>
@@ -53,61 +66,11 @@
         </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="panel-2" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por tipo de empresa
-                </h2>
-                <div class="panel-toolbar pr-3 align-self-end">
-                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_tipo" role="tab">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_tipo_detalle" role="tab">Detalle</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-toolbar">
-                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaTipo();"></button>
-                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
-                </div>
-            </div>
-            <div class="panel-container show">
-                <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
-                        <div class="tab-pane fade show active" id="tab_empresa_tipo" role="tabpanel">
-                            <div id="dashboard-tipo" style="min-height: 300px;"></div>
-                        </div>
-                        <div class="tab-pane fade" id="tab_empresa_tipo_detalle" role="tabpanel">
-                            <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Item</th>
-                                            <th>Tipo empresa</th>
-                                            <th>Cantidad</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-6">
-        <div id="panel-3" class="panel">
-            <div class="panel-hdr">
-                <h2>
-                    Por giro de negocio
+                    Giro de negocio
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
@@ -127,16 +90,16 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
+                    <div class="tab-content p-3">
                         <div class="tab-pane fade show active" id="tab_empresa_giro" role="tabpanel">
-                            <div id="dashboard-giro" style="min-height: 300px;"></div>
+                            <div id="dashboard-giro" style="min-height: 400px;"></div>
                         </div>
                         <div class="tab-pane fade" id="tab_empresa_giro_detalle" role="tabpanel">
                             <div class="table-responsive">
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-giro" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Item</th>
+                                            <th>Nro. item</th>
                                             <th>Giro Negocio</th>
                                             <th>Cantidad</th>
                                         </tr>
@@ -150,11 +113,14 @@
             </div>
         </div>
     </div>
-    <div class="col-6">
-        <div id="panel-4" class="panel">
+</div>
+
+<div class="row">
+    <div class="col-lg-7 col-md-12 col-sm-12">
+        <div id="panel-3" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por estado
+                    Estado
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
@@ -174,7 +140,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
+                    <div class="tab-content p-3">
                         <div class="tab-pane fade show active" id="tab_empresa_estado" role="tabpanel">
                             <div id="dashboard-estado" style="min-height: 300px;"></div>
                         </div>
@@ -183,8 +149,8 @@
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-estado" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Item</th>
-                                            <th>Edad</th>
+                                            <th>Nro. item</th>
+                                            <th>Estado</th>
                                             <th>Cantidad</th>
                                         </tr>
                                     </thead>
@@ -197,8 +163,61 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-5 col-md-12 col-sm-12">
+        <div id="panel-4" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Tipo Persona
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_tipo" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_tipo_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaTipo();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_empresa_tipo" role="tabpanel">
+                            <div id="dashboard-tipo" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_empresa_tipo_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Nro. item</th>
+                                            <th>Tipo</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding-top: 15px;">
+        <p style="font-size: 15px;">
+            Fuente: &nbsp;&nbsp;<a href="javascript:void(0)" onclick="window.open('https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/frameCriterioBusqueda.jsp');">
+                https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/frameCriterioBusqueda.jsp
+            </a>
+        </p>
+    </div>
 </div>
-
 
 @section scripts{
     @Scripts.Render("~/Scripts/Dashboard/Empresa.js")

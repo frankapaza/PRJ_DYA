@@ -150,13 +150,13 @@ function ListarAutomotorAnioFabricacion() {
             if (data) {
                 if (data.length > 0) {
                     var lstDatosBE = new Array();
-                    lstDatosBE.push(['Año Fabricación','Cantidad']);
-                    
+                    lstDatosBE.push(['Año Fabricación', 'Cantidad']);
+
                     $.each(data, function (i, obj) {
                         $("#dt-tabla-anio-fabricacion").dataTable().fnAddData([
                             (i + 1)
-                            ,obj.DES_DAT_VC
-                            ,obj.NU_CAN_SI
+                            , obj.DES_DAT_VC
+                            , obj.NU_CAN_SI
                         ]);
 
                         lstDatosBE.push([obj.DES_DAT_VC, obj.NU_CAN_SI]);
@@ -196,7 +196,7 @@ function DashboardAutomotorUbicacion() {
 
 function DashboardAutomotorMarca() {
     var data = google.visualization.arrayToDataTable(lstAutomotorMarcaBE);
-    
+
     var options = {
         title: '',
         is3D: true,

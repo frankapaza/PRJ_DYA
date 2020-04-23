@@ -46,7 +46,7 @@ namespace DYA.Controllers
                     "Bienvenido " + objUsuarioBE.NOM_PER_VC + " " + objUsuarioBE.APE_PER_VC, 
                     "Para validar su correo haga click <a href='" +
                     "https://localhost:44357/Usuario/verificarCorreo?p=" + objUsuarioBE.ID_USU_IN_CRYPT + "'>Aquí</a>,ó ingresar a la siguiente ruta " +
-                    "https://localhost:44357/Usuario/verificarCorreo?p=" + objUsuarioBE.ID_USU_IN_CRYPT, "MANAR PERU");
+                    "https://localhost:44357/Usuario/verificarCorreo?p=" + objUsuarioBE.ID_USU_IN_CRYPT, "DyA");
             }
 
             return Json(resultado, JsonRequestBehavior.AllowGet);

@@ -53,12 +53,12 @@
                                                 <div class="invalid-feedback">Debe ingresar un nombre.</div>
                                             </div>
                                             <div class="form-group col">
-                                                <label><i class="far fa-envelope"></i>Apellido</label>
+                                                <label><i class="fas fa-users"></i>Apellido</label>
                                                 <input type="text" id="txt_apellido" class="form-control" placeholder="Ingrese apellido" required>
                                                 <div class="invalid-feedback">Debe ingresar su apellido.</div>
                                             </div>
                                             <div class="form-group col">
-                                                <label><i class="far fa-envelope"></i>Nro. Documento</label>
+                                                <label><i class="fas fa-portrait"></i>Nro. Documento</label>
                                                 <input type="text" id="txt_documento" class="form-control" pattern="[1-9]{8}" placeholder="Ingrese su DNI" maxlength="8"
                                                        title="Debe ingresar correctamente 8 digitos.">
                                                 <div class="invalid-feedback">Debe ingresar su numero de documento.</div>
@@ -67,49 +67,44 @@
                                         <div class="form-row">
                                             <label class="col-xl-12 form-label" for="txt_nombre">Datos de contacto:</label>
                                             <div class="form-group col">
-                                                <label><i class="far fa-user"></i>Correo electronico</label>
+                                                <label><i class="far fa-envelope"></i>Correo electronico</label>
                                                 <input type="email" id="txt_email" class="form-control" placeholder="Ingrese email" required>
                                                 <div class="invalid-feedback">Ingrese su email.</div>
                                                 <div class="help-block" style="display:none;">Your email will also be your username</div>
                                             </div>
                                             <div class="form-group col">
-                                                <label><i class="far fa-envelope"></i>Celular</label>
+                                                <label><i class="fas fa-phone-square"></i>Celular</label>
                                                 <input type="text" id="txt_celular" class="form-control" placeholder="Ingrese celular corporativo" required>
                                                 <div class="invalid-feedback">Ingrese su celular corporativo.</div>
                                             </div>
                                             <div class="form-group col">
-                                                <label><i class="far fa-envelope"></i>Telefono (Opcional)</label>
+                                                <label><i class="fas fa-phone"></i>Telefono (Opcional)</label>
                                                 <input type="text" id="txt_telefono" class="form-control" placeholder="Ingrese telefono personal">
                                             </div>
                                         </div>
                                         <div class="form-row" style="margin-top: 10px;">
-                                            <label class="col-xl-12 form-label" for="txt_usuario">Ingrese su Usuario y Password: <br>Con estas credenciales usted podra ingresar al aplicativo.</label>
+                                            <label class="col-xl-12 form-label" for="txt_usuario" style="margin-bottom: 20px;">Ingrese su Usuario y Password: <br>Con estas credenciales usted podra ingresar al aplicativo.</label>
                                             <div class="form-group col">
-                                                <label><i class="far fa-user"></i>Usuario</label>
+                                                <label><i class="fas fa-user-plus"></i>Usuario</label>
                                                 <input type="text" id="txt_usuario" class="form-control" placeholder="Ingrese nombre de usuario" required>
                                                 <div class="invalid-feedback">Ingrese un nombre de usuario.</div>
                                             </div>
                                             <div class="form-group col">
-                                                <label><i class="far fa-envelope"></i>Contraseña</label>
+                                                <label><i class="fas fa-key"></i>Contraseña</label>
                                                 <input type="password" id="txt_password" class="form-control" placeholder="Ingrese contraseña" style="height: 55px;" required>
                                                 <div class="invalid-feedback">Campo obligatorio. Debe ingresar una contraseña.</div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="chk_terminos_condiciones" required>
-                                                <label class="custom-control-label" for="chk_terminos_condiciones"> Acepto los terminos y condiciones</label>
-                                                <div class="invalid-feedback">Debe aceptar los terminos y condiciones para poder registrarse.</div>
+                                        <div class="row" style="padding-top: 18px;">
+                                            <div class="col-4">&nbsp;</div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <button class="theme-btn style-one waves-effect waves-themed" type="button" id="btn_siguiente">Siguiente</button>
+                                                </div>
                                             </div>
-                                            <div class="custom-control custom-checkbox" style="display:none;">
-                                                <input type="checkbox" class="custom-control-input" id="newsletter">
-                                                <label class="custom-control-label" for="newsletter">Sign up for newsletters (dont worry, we won't send so many)</label>
-                                            </div>
+                                            <div class="col-4">&nbsp;</div>
                                         </div>
-                                        <div class="form-group" style="padding-top: 18px;">
-                                            <button class="theme-btn style-one" id="btn_registrar" type="submit">Enviar verificación</button>
-                                        </div>
-                                    </div>
+                                     </div>
                                 </div>
                             </div>
 
@@ -118,6 +113,126 @@
                 </div>
             </section>
 
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_terminos" tabindex="-1" role="dialog" style="display: none;" aria-modal="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #dbdee2;">
+                <h5 class="modal-title">Lea los siguientes parrafos aceptando ciertas condiciones</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body" style="padding: 0px !important;">
+                <div class="accordion accordion-hover" id="js_demo_accordion-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="javascript:void(0);" class="card-title" data-toggle="collapse" data-target="#js_demo_accordion-5a" aria-expanded="true">
+                                <i class="fal fa-cog width-2 fs-xl"></i>
+                                Términos de Uso y Condiciones
+                                <span class="ml-auto">
+                                    <span class="collapsed-reveal">
+                                        <i class="fal fa-chevron-up fs-xl"></i>
+                                    </span>
+                                    <span class="collapsed-hidden">
+                                        <i class="fal fa-chevron-down fs-xl"></i>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="js_demo_accordion-5a" class="collapse show" data-parent="#js_demo_accordion-5" style="">
+                            <div class="card-body" style="text-align: justify; padding-bottom: 0px !important; font-size: 15px;">
+                                Mediante la presente se le dan a conocer nuestros términos de uso y condiciones, para que entienda más nuestra plataforma.
+                                <br />
+                                <ol style="padding-top: 8px;">
+                                    <li>1. Al ser una plataforma B2B, solo se acepta la inscripción del servicio mediante un correo corporativo, en el cual será validado mediante un correo de confirmación enviandolo a su correo ingresado.</li>
+                                    <li>2. Usted acepta que nos contactemos con usted mediante correos electrónicos para brindarle información más detallada de lo que puede lograr con esta plataforma.</li>
+                                    <li>3. Usted declara que toda la información que presenta es cierta y acepta que los datos que se recopilan a través de este formulario serán usados por la compañía de manera interna.</li>
+                                    <li>4. En caso de darle un uso inadecuado al servicio (accesos indebidos, reventa del servicio o lucrar de alguna manera con el mismo) al mismo momento de su detección, su cuenta será inhabilitada indefinidamente, no teniendo ninguna opción a reclamo.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="javascript:void(0);" class="card-title collapsed" data-toggle="collapse" data-target="#js_demo_accordion-5b" aria-expanded="false">
+                                <i class="fal fa-code-merge width-2 fs-xl"></i>
+                                Aceptación de los Términos de Uso y Condiciones
+                                <span class="ml-auto">
+                                    <span class="collapsed-reveal">
+                                        <i class="fal fa-chevron-up fs-xl"></i>
+                                    </span>
+                                    <span class="collapsed-hidden">
+                                        <i class="fal fa-chevron-down fs-xl"></i>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="js_demo_accordion-5b" class="collapse" data-parent="#js_demo_accordion-5" style="">
+                            <div class="card-body" style="text-align: justify; padding-bottom: 0px !important; font-size: 15px;">
+                                <ol>
+                                    <li>1. Usted acepta expresamente estar sujeto a los términos de uso y condiciones y cumplir con los mismos. En caso de no estar de acuerdo con los 
+                                    Términos de Uso y Condiciones le rogamos que no acceda ni use ningún servicio ni contenido de nuestro Servicio.</li>
+                                    <li>2. Al hacer uso de nuestro Servicio, los usuarios han aceptado los Términos de Uso. Dicho acuerdo es válido e irrevocable.</li>
+                                    <li>3. En el caso de que haya Términos o Condiciones Adicionales en nuestro Servicio, usted acepta expresamente estar sujeto a dichos términos,
+                                    así como a los términos de uso o condiciones.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="javascript:void(0);" class="card-title collapsed" data-toggle="collapse" data-target="#js_demo_accordion-5c" aria-expanded="false">
+                                <i class="fal fa-cloud-upload-alt width-2 fs-xl"></i>
+                                Modificación de los Términos de Uso y Condiciones
+                                <span class="ml-auto">
+                                    <span class="collapsed-reveal">
+                                        <i class="fal fa-chevron-up fs-xl"></i>
+                                    </span>
+                                    <span class="collapsed-hidden">
+                                        <i class="fal fa-chevron-down fs-xl"></i>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="js_demo_accordion-5c" class="collapse" data-parent="#js_demo_accordion-5" style="font-size: 15px;">
+                            <div class="card-body" style="text-align: justify;">
+                                La Compañía se reserva el derecho de actualizar o modificar sin previo aviso los Términos de Uso o los Términos Adicionales
+                                en cualquier momento que se considere necesario. Estos cambios tendrán validez en el momento en que se pongan en la página
+                                web de la Compañía. Se dará por hecho que los usuarios han aceptado el contenido de las modificaciones que se hayan llevado 
+                                a cabo. Los usuarios deberán consultar regularmente los términos y condiciones al usar el Servicio, ya que es posible que 
+                                no se proporcione ningún aviso sobre las modificaciones de los Términos, Condiciones y Usos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="border-bottom-left-radius: calc(0.3rem - 1px); border-bottom-right-radius: calc(0.3rem - 1px);
+                 border-top: 1px solid #dee2e6; padding: 1.35rem; background-color: #f7f7f7;">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="chk_terminos_condiciones" required>
+                                <label class="custom-control-label" for="chk_terminos_condiciones"> Acepto todos los términos y condiciones</label>
+                                <div class="invalid-feedback">Debe aceptar los terminos y condiciones.</div>
+                            </div>
+                            <div class="custom-control custom-checkbox" style="display:none;">
+                                <input type="checkbox" class="custom-control-input" id="newsletter">
+                                <label class="custom-control-label" for="newsletter">Sign up for newsletters (dont worry, we won't send so many)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="text-align: right;" id="footer_terminos">
+                        <button type="button" class="btn btn-secondary waves-effect waves-themed" data-dismiss="modal">Close</button>
+                        <button class="btn btn-success waves-effect waves-themed" id="btn_registrar" type="submit">Enviar verificación</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

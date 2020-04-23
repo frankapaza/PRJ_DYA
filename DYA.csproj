@@ -147,6 +147,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\Contacto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1166,6 +1167,12 @@
     <Content Include="Content\portal\fonts\_flaticon.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Demo\Automotor.js" />
+    <Content Include="Scripts\Demo\Demografico.js" />
+    <Content Include="Scripts\Demo\Empresa.js" />
+    <Content Include="Scripts\Demo\Medicos.js" />
+    <Content Include="Scripts\Demo\Soat.js" />
+    <Content Include="Scripts\Demo\Telecomunicaciones.js" />
     <Content Include="Scripts\Dashboard\Demografico.js" />
     <Content Include="Scripts\Dashboard\Automotor.js" />
     <Content Include="Scripts\Dashboard\Medicos.js" />
@@ -1183,6 +1190,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Mantenimiento\jsUsuario.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Portal\jsContactarCorreo.js" />
     <Content Include="Scripts\Seguridad\jsIngresoSistema.js" />
     <Content Include="Scripts\Seguridad\jsNuevoUsuario.js" />
     <Content Include="template.html" />
@@ -1219,7 +1227,13 @@
     <Content Include="Views\Usuario\verificarCorreo.cshtml" />
     <Content Include="Views\Shared\_Portal.cshtml" />
     <Content Include="Views\Portal\ContenidoPortal.cshtml" />
-    <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\Demo\Automotor.cshtml" />
+    <Content Include="Views\Demo\Demografico.cshtml" />
+    <Content Include="Views\Demo\Empresa.cshtml" />
+    <Content Include="Views\Demo\Medicos.cshtml" />
+    <Content Include="Views\Demo\Soat.cshtml" />
+    <Content Include="Views\Demo\Telecomunicaciones.cshtml" />
+    <Content Include="Views\Shared\_Demo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

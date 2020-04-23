@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Medicos";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Demo.cshtml";
 }
 
 <ol class="breadcrumb page-breadcrumb">
@@ -92,7 +92,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 tab-print">
                         <div class="tab-pane fade show active" id="tab_medico_grado" role="tabpanel">
                             <div id="dashboard-grado" style="min-height: 300px;"></div>
                         </div>
@@ -139,7 +139,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 tab-print">
                         <div class="tab-pane fade show active" id="tab_medico_estado" role="tabpanel">
                             <div id="dashboard-estado" style="min-height: 300px;"></div>
                         </div>
@@ -189,7 +189,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 tab-print">
                         <div class="tab-pane fade show active" id="tab_medico_especialidad" role="tabpanel">
                             <div id="dashboard-especialidad" style="min-height: 500px;"></div>
                         </div>
@@ -222,5 +222,5 @@
 </div>
 
 @section scripts{
-    @Scripts.Render("~/Scripts/Dashboard/Medicos.js")
+    @Scripts.Render("~/Scripts/Demo/Medicos.js")
 }

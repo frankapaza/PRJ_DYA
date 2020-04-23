@@ -1,21 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7424C9RYR5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7424C9RYR5');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    <title>DYA</title>
-
+    <title>DyA</title>
     <!-- Fav Icon -->
-    <link rel="icon" href="~/Content/portal/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Content/portal/images/logotipos-06-icon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    @Styles.Render("~/Content/css/notifications/sweetalert2/sweetalert2.bundle.css")
     <!-- Stylesheets -->
     <link href="~/Content/portal/css/font-awesome-all.css" rel="stylesheet">
     <link href="~/Content/portal/css/flaticon.css" rel="stylesheet">
@@ -147,31 +152,31 @@
     </div>
     <!-- preloader end -->
     <!-- search-popup -->
-    <div id="search-popup" class="search-popup">
-        <div class="close-search"><span>Cerrar</span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="post" action="index.html">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Buscar aqui" required>
-                            <input type="submit" value="Buscar" class="theme-btn style-four">
-                        </fieldset>
-                    </div>
-                </form>
+    @*<div id="search-popup" class="search-popup">
+            <div class="close-search"><span>Cerrar</span></div>
+            <div class="popup-inner">
+                <div class="overlay-layer"></div>
+                <div class="search-form">
+                    <form method="post" action="index.html">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="search" class="form-control" name="search-input" value="" placeholder="Buscar aqui" required>
+                                <input type="submit" value="Buscar" class="theme-btn style-four">
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>
+        </div>*@
     <!-- search-popup end -->
 
-    <header class="main-header style-one home-1">
+    <header class="main-header style-five home-onepage">
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-3 col-md-12 col-sm-12 logo-column">
                     <div class="logo-box style-two">
                         <figure class="logo">
-                            <a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 165px;"></a>
+                            <a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 215px;"></a>
                         </figure>
                     </div>
                 </div>
@@ -183,13 +188,13 @@
                                 <ul class="social-links clearfix">
                                     <li><a href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
-                                <div class="search-box-outer">
-                                    <form action="index.html" method="post" class="search-btn">
-                                        <button type="button" class="search-toggler"><i class="flaticon-search"></i>Buscar</button>
-                                    </form>
-                                </div>
+                                @*<div class="search-box-outer">
+                                        <form action="index.html" method="post" class="search-btn">
+                                            <button type="button" class="search-toggler"><i class="flaticon-search"></i>Buscar</button>
+                                        </form>
+                                    </div>*@
                                 <div class="support" style="margin-top: 4px; margin-left: 14px;">
-                                    <a href="https://localhost:44357/Seguridad/NuevoUsuario">Registrarse</a>
+                                    <a href="https://localhost:44357/Seguridad/IngresoSistema">Iniciar Sesión</a>
                                 </div>
                             </div>
                         </div>
@@ -205,22 +210,10 @@
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation scroll-nav clearfix">
                                             <li><a href="#sec_principal">Principal</a></li>
-                                            <li><a href="#sec_industria">Negocio</a></li>
-                                            <li class="dropdown">
-                                                <a href="javascript:void(0)">Acerca de</a>
-                                                <ul>
-                                                    <li><a href="#sec_acerca_de">Sobre la plataforma<i class="flaticon-next"></i></a></li>
-                                                    <li><a href="#sec_vis_mis">Misión / Visión<i class="flaticon-next"></i></a></li>
-                                                    <li><a href="#sec_legalidad">Legalidad<i class="flaticon-next"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="javascript:void(0)">Accesibilidad</a>
-                                                <ul>
-                                                    <li><a href="#" data-toggle="modal" data-target=".modalVipPremium">Cuenta Premium<i class="flaticon-next"></i></a></li>
-                                                    <li><a href="#sec_membresia">Tipos de Membresia<i class="flaticon-next"></i></a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="#sec_industria">Negocios</a></li>
+                                            <li><a href="#sec_acerca_de">Acerca de DyA</a></li>
+                                            <li><a href="#sec_legalidad">Legalidad</a></li>
+                                            @*<li><a href="#sec_membresia">Planes</a></li>*@
                                             <li><a href="#sec_contacto">Contáctanos</a></li>
                                         </ul>
                                     </div>
@@ -241,7 +234,7 @@
                         <!--Keep This Empty / Menu will come through Javascript-->
                     </nav>
                     <div class="btn-box">
-                        <a href="https://localhost:44357/Seguridad/NuevoUsuario" class="theme-btn style-one">Registrate Ahora</a>
+                        <a href="https://localhost:44357/Seguridad/IngresoSistema" class="theme-btn style-one">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
@@ -254,7 +247,7 @@
         <div class="close-btn"><i class="fas fa-times"></i></div>
 
         <nav class="menu-box">
-            <div class="nav-logo"><a href="index.html"><img src="~/Content/portal/images/logo.png" alt="" title=""></a></div>
+            <div class="nav-logo"><a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" title=""></a></div>
             <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             <div class="contact-info">
                 <h4>Contact Info</h4>
@@ -285,7 +278,6 @@
     <script src="~/Content/portal/js/bootstrap.min.js"></script>
     <script src="~/Content/portal/js/owl.js"></script>
     <script src="~/Content/portal/js/wow.js"></script>
-    <script src="~/Content/portal/js/validation.js"></script>
 
     <script src="~/Content/portal/js/jquery.fancybox.js"></script>
     <script src="~/Content/portal/js/appear.js"></script>
@@ -300,43 +292,11 @@
         $('[data-fancybox]').fancybox({
             protect: true
         });
-
-        function desapareceInfo() {
-            $('#info').fadeOut(500);
-        }
-        function enviarCorreo() {
-            var name = $('#name').val();
-            var email = $('#email').val();
-            var area = $('#area option:selected').text();
-            var industria = $('#industria option:selected').text();
-            var subject = $('#subject option:selected').text();
-            var message = $('#message').val();
-
-            name = jQuery.trim(name);
-            email = jQuery.trim(email);
-            subject = jQuery.trim(subject);
-            message = jQuery.trim(message);
-
-            function validateEmail(email) {
-                var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
-                return emailReg.test(email);
-            }
-
-            if (!validateEmail(email)) {
-                $('#email').val(email);
-            } else {
-                if (name == "" || email == "" || subject == "" || message == "") exit();
-                $.ajax({
-                    type: "POST",
-                    url: "send.php",
-                    data: $('#contact-form').serialize(),
-                    success: function (cevap) {
-                        alert("Se envio exitosamente el correo.");
-                    }
-                });
-            }
-        }
     </script>
+
+    @Scripts.Render("~/Content/js/notifications/sweetalert2/sweetalert2.bundle.js")
+    @Scripts.Render("~/Content/js/funciones.alertas.js")
+    @RenderSection("scripts", required: false)
 
 </body><!-- End of .page_wrapper -->
 </html>

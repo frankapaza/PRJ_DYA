@@ -4,12 +4,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<ol class="breadcrumb page-breadcrumb">
+    <li class="breadcrumb-item"><a href="javascript:void(0);">Inicio</a></li>
+    <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item active">Automotor</li>
+    <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date" id="fecha"></span></li>
+</ol>
+
+<div class="subheader">
+    <h1 class="subheader-title">
+        <i class="subheader-icon fal fa-chart-area"></i> Dashboard <span class="fw-300">Automotor</span>
+    </h1>
+</div>
+
 <div class="row">
-    <div class="col-12">
+    <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="panel-1" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por ubicación demográfica
+                    Ubicación geográfica
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
@@ -38,106 +51,8 @@
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-ubicacion" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Item</th>
+                                            <th>Nro. item</th>
                                             <th>Departamento</th>
-                                            <th>Cantidad</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-6">
-        <div id="panel-1" class="panel">
-            <div class="panel-hdr">
-                <h2>
-                    Por marca
-                </h2>
-                <div class="panel-toolbar pr-3 align-self-end">
-                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_marca" role="tab">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_marca_detalle" role="tab">Detalle</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-toolbar">
-                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatSeguro();"></button>
-                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
-                </div>
-            </div>
-            <div class="panel-container show">
-                <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
-                        <div class="tab-pane fade show active" id="tab_automotor_marca" role="tabpanel">
-                            <div id="dashboard-marca" style="min-height: 300px;"></div>
-                        </div>
-                        <div class="tab-pane fade" id="tab_automotor_marca_detalle" role="tabpanel">
-                            <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-marca" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Item</th>
-                                            <th>Seguro</th>
-                                            <th>Cantidad</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-6">
-        <div id="panel-2" class="panel">
-            <div class="panel-hdr">
-                <h2>
-                    Por tipo
-                </h2>
-                <div class="panel-toolbar pr-3 align-self-end">
-                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_tipo_persona" role="tab">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_tipo_persona_detalle" role="tab">Detalle</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-toolbar">
-                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatTipo();"></button>
-                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
-                </div>
-            </div>
-            <div class="panel-container show">
-                <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
-                        <div class="tab-pane fade show active" id="tab_automotor_tipo_persona" role="tabpanel">
-                            <div id="dashboard-tipo-persona" style="min-height: 300px;"></div>
-                        </div>
-                        <div class="tab-pane fade" id="tab_automotor_tipo_persona_detalle" role="tabpanel">
-                            <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo-persona" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Item</th>
-                                            <th>Tipo</th>
                                             <th>Porcentaje</th>
                                         </tr>
                                     </thead>
@@ -153,11 +68,11 @@
 </div>
 
 <div class="row">
-    <div class="col-6">
-        <div id="panel-3" class="panel">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        <div id="panel-1" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por tipo vehiculo
+                    Tipo de Carga
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
@@ -177,7 +92,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
+                    <div class="tab-content p-3">
                         <div class="tab-pane fade show active" id="tab_automotor_tipo_vehiculo" role="tabpanel">
                             <div id="dashboard-tipo-vehiculo" style="min-height: 300px;"></div>
                         </div>
@@ -186,8 +101,8 @@
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo-vehiculo" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Item</th>
-                                            <th>Tipo Vehiculo</th>
+                                            <th>Nro. item</th>
+                                            <th>Tipo</th>
                                             <th>Porcentaje</th>
                                         </tr>
                                     </thead>
@@ -200,11 +115,108 @@
             </div>
         </div>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        <div id="panel-2" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Tipo de propietario
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_tipo_persona" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_tipo_persona_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatTipo();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_automotor_tipo_persona" role="tabpanel">
+                            <div id="dashboard-tipo-persona" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_automotor_tipo_persona_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo-persona" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Nro. item</th>
+                                            <th>Tipo</th>
+                                            <th>Porcentaje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div id="panel-3" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    Marca
+                </h2>
+                <div class="panel-toolbar pr-3 align-self-end">
+                    <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab_automotor_marca" role="tab">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab_automotor_marca_detalle" role="tab">Detalle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarSoatSeguro();"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="tab_automotor_marca" role="tabpanel">
+                            <div id="dashboard-marca" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="tab-pane fade" id="tab_automotor_marca_detalle" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-marca" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Nro. item</th>
+                                            <th>Marca</th>
+                                            <th>Porcentaje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="panel-4" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Por año fabricación
+                    Año de fabricación
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
@@ -224,17 +236,17 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3 @if (@ViewBag.IdPerfilIN == 2) { @Html.Raw("tab-print") }">
+                    <div class="tab-content p-3">
                         <div class="tab-pane fade show active" id="tab_automotor_anio_fabricacion" role="tabpanel">
-                            <div id="dashboard-anio-fabricacion" style="min-height: 300px;"></div>
+                            <div id="dashboard-anio-fabricacion" style="min-height: 400px;"></div>
                         </div>
                         <div class="tab-pane fade" id="tab_automotor_anio_fabricacion_detalle" role="tabpanel">
                             <div class="table-responsive">
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-anio-fabricacion" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>Item</th>
-                                            <th>Año Fabricación</th>
+                                            <th>Nro. item</th>
+                                            <th>Año</th>
                                             <th>Cantidad</th>
                                         </tr>
                                     </thead>
@@ -246,6 +258,13 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid" style="padding-top: 15px;">
+        <p style="font-size: 15px;">
+            Fuente: &nbsp;&nbsp;<a href="javascript:void(0)" onclick="window.open('https://www.sunarp.gob.pe/ConsultaVehicular/');">
+                https://www.sunarp.gob.pe/ConsultaVehicular/
+            </a>
+        </p>
     </div>
 </div>
 

@@ -95,21 +95,20 @@
 .banner-section .content-box{
 	position: relative;
 	display: block;
-	margin-top: 276px;
+	margin-top: 220px;
 }
 
 .banner-section .content-box h1{
 	position: relative;
-	font-size: 60px;
+	font-size: 58px;
 	line-height: 70px;
 	font-weight: 700;
-	margin-bottom: 10px;
 }
 
 .banner-section .content-box p{
 	font-size: 18px;
 	line-height: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 26px;
 }
 
 .banner-section .content-box .btn-box .theme-btn.style-one{
@@ -140,7 +139,7 @@
 }
 
 .slider-image-1 .image-1{
-	right: 80px;
+	right: 160px;
 	top: 140px;
 }
 
@@ -157,12 +156,12 @@
 }
 
 .slider-image-1 .image-4{
-	left: 53px;
+	left: 0px;
 	bottom: 100px;
 }
 
 .slider-image-1 .image-5{
-	left: -8px;
+	left: -60px;
 	top: 190px;
 }
 
@@ -1566,7 +1565,7 @@
 .main-footer .footer-top{
 	position: relative;
 	background: #18003a;
-	padding: 100px 0px 90px 0px;
+	padding: 36px 0px 63px 0px;
 }
 
 .main-footer .widget-section .widget-title{
@@ -5228,7 +5227,7 @@
 
 .about-style-four{
 	position: relative;
-	padding: 152px 0px 130px 0px;
+	padding: 152px 0px 215px 0px;
 }
 
 .about-style-four .pattern-layer{
@@ -5288,9 +5287,9 @@
 	z-index: -1;
 }
 
-#image_block_03 .image-box .pattern-layer{
+#image_block_03 .image-box .pattern-layer {
 	position: absolute;
-	left: -120px;
+	left: -117px;
 	top: -90px;
 	right: 0px;
 	width: 623px;
@@ -6674,8 +6673,8 @@ h3 a{
 
 #image_block_04 .image-box .pattern-bg{
 	position: absolute;
-	left: -20px;
-	top: 30px;
+	left: -8px;
+	top: -40px;
 	right: 0px;
 	width: 570px;
 	height: 570px;

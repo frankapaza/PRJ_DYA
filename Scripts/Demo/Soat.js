@@ -135,7 +135,7 @@ function ListarSoatVencimiento() {
 
 function DashboardSoatSeguro() {
     var data = google.visualization.arrayToDataTable(lstSoatSeguroBE);
-    
+
     var options = {
         title: '',
         is3D: true,

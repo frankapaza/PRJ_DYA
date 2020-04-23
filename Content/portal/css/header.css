@@ -915,8 +915,9 @@ div#mCSB_1_container{
   background: #e5e5e5;
 }
 
-.main-header.style-five .sticky-header .main-menu .navigation > li{
-  padding-top: 22px;
+.main-header.style-five .sticky-header .main-menu .navigation > li {
+    color: #1d165c;
+    padding-top: 22px;
 }
 
 
@@ -1684,7 +1685,7 @@ div#mCSB_1_container{
 }
 
 .main-header.style-five .main-menu .navigation > li > a{
-  color: #1d165c;
+  color: #fff;
 }
 
 .main-header.style-five .main-menu .navigation li.dropdown .dropdown-btn{
@@ -1739,10 +1740,6 @@ div#mCSB_1_container{
 
 .main-header.style-five .search-box-outer .search-toggler{
   font-size: 22px;
-}
-
-.main-header.style-five .main-menu .navigation > li{
-  padding-top: 35px;
 }
 
 .main-header.style-five .main-menu .navigation li.dropdown .dropdown-btn{

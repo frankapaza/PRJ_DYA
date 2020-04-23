@@ -10,32 +10,77 @@ namespace DYA.Controllers
 {
     public class DemoController : Controller
     {
-        // GET: Demo
-        public ActionResult Index()
+        // GET: Demografico
+        [SessionExpireFilter]
+        public ActionResult Demografico()
         {
-            BL_USUARIO objUsuarioBL = new BL_USUARIO();
-            BE_USUARIO objUsuarioBE = new BE_USUARIO();
-            objUsuarioBE.ID_USU_IN = 22;//CAMBIAR ACA EL ID_USUARIO de la tabla TBL_USUARIO
-            objUsuarioBL.loguearsePorIdUsuario(objUsuarioBE);
-
-            if (objUsuarioBE.objResBE.Key == 1)
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
             {
-                HttpCookie myCookie = new HttpCookie("COO_DYA");
-                myCookie.Values.Add("USUARIO_CRYPT", Convert.ToString(objUsuarioBE.ID_USU_IN_CRYPT));
-                myCookie.Values.Add("PERFIL", Convert.ToString(objUsuarioBE.objRolBE.ID_ROL_IN));
-                myCookie.Values.Add("TIPO_CUENTA", Convert.ToString(objUsuarioBE.objTipoCuentaBE.ID_TIP_CUE_IN));
-                myCookie.Expires = DateTime.Now.AddDays(30d);
-                HttpContext.Response.Cookies.Add(myCookie);
-
-                /*OBTENER MENU*/
-                BL_MENU objMenuBL = new BL_MENU();
-                List<BE_MENU> lstMenuBE = objMenuBL.listarMenu(objUsuarioBE);
-
-                HttpContext.Session["USUARIO"] = objUsuarioBE;
-                HttpContext.Session["MENU"] = lstMenuBE;
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
             }
-
             return View();
         }
+
+        // GET: Empresas
+        [SessionExpireFilter]
+        public ActionResult Empresa()
+        {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
+            return View();
+        }
+
+        // GET: Automotor
+        [SessionExpireFilter]
+        public ActionResult Automotor()
+        {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
+            return View();
+        }
+
+        // GET: Soat
+        [SessionExpireFilter]
+        public ActionResult Soat()
+        {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
+            return View();
+        }
+
+        // GET: Medicos
+        [SessionExpireFilter]
+        public ActionResult Medicos()
+        {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
+            return View();
+        }
+
+        // GET: Telecomunicaciones
+        [SessionExpireFilter]
+        public ActionResult Telecomunicaciones()
+        {
+            SessionValidate objSessionValidate = new SessionValidate();
+            if (objSessionValidate.isSuccess())
+            {
+                ViewBag.IdPerfilIN = objSessionValidate.obtenerIdRol();
+            }
+            return View();
+        }
+
     }
 }

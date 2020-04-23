@@ -1,19 +1,19 @@
 ﻿
 @{
-    ViewBag.Title = "Medicos";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Empresa";
+    Layout = "~/Views/Shared/_Demo.cshtml";
 }
 
 <ol class="breadcrumb page-breadcrumb">
     <li class="breadcrumb-item"><a href="javascript:void(0);">Inicio</a></li>
     <li class="breadcrumb-item">Dashboard</li>
-    <li class="breadcrumb-item active">Médicos</li>
+    <li class="breadcrumb-item active">Empresa</li>
     <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date" id="fecha"></span></li>
 </ol>
 
 <div class="subheader">
     <h1 class="subheader-title">
-        <i class="subheader-icon fal fa-chart-area"></i> Dashboard <span class="fw-300">Médicos</span>
+        <i class="subheader-icon fal fa-chart-area"></i> Dashboard <span class="fw-300">Empresa</span>
     </h1>
 </div>
 
@@ -27,26 +27,26 @@
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_medico_ubicacion" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_ubicacion" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_medico_ubicacion_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_ubicacion_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarMedicoUbicacion();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaUbicacion();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_medico_ubicacion" role="tabpanel">
+                        <div class="tab-pane fade show active" id="tab_empresa_ubicacion" role="tabpanel">
                             <div id="dashboard-ubicacion" style="min-height: 300px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_medico_ubicacion_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_empresa_ubicacion_detalle" role="tabpanel">
                             <div class="table-responsive">
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-ubicacion" width="100%">
                                     <thead>
@@ -65,44 +65,42 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-lg-6 col-md-12 col-sm-12">
-        <div id="panel-3" class="panel">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div id="panel-2" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Grado
+                    Giro de negocio
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_medico_grado" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_giro" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_medico_grado_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_giro_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarMedicoGrado();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaGiro();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_medico_grado" role="tabpanel">
-                            <div id="dashboard-grado" style="min-height: 300px;"></div>
+                    <div class="tab-content p-3 tab-print">
+                        <div class="tab-pane fade show active" id="tab_empresa_giro" role="tabpanel">
+                            <div id="dashboard-giro" style="min-height: 400px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_medico_grado_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_empresa_giro_detalle" role="tabpanel">
                             <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-grado" width="100%">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-giro" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Nro. item</th>
-                                            <th>Grado</th>
+                                            <th>Giro Negocio</th>
                                             <th>Cantidad</th>
                                         </tr>
                                     </thead>
@@ -115,8 +113,11 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
-        <div id="panel-4" class="panel">
+</div>
+
+<div class="row">
+    <div class="col-lg-7 col-md-12 col-sm-12">
+        <div id="panel-3" class="panel">
             <div class="panel-hdr">
                 <h2>
                     Estado
@@ -124,26 +125,26 @@
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_medico_estado" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_estado" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_medico_estado_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_estado_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarMedicoEstado();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaEstado();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_medico_estado" role="tabpanel">
+                    <div class="tab-content p-3 tab-print">
+                        <div class="tab-pane fade show active" id="tab_empresa_estado" role="tabpanel">
                             <div id="dashboard-estado" style="min-height: 300px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_medico_estado_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_empresa_estado_detalle" role="tabpanel">
                             <div class="table-responsive">
                                 <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-estado" width="100%">
                                     <thead>
@@ -162,44 +163,41 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div id="panel-2" class="panel">
+    <div class="col-lg-5 col-md-12 col-sm-12">
+        <div id="panel-4" class="panel">
             <div class="panel-hdr">
                 <h2>
-                    Especialidad
+                    Tipo Persona
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
                     <ul id="demo_panel-tabs" class="nav nav-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab_medico_especialidad" role="tab">Dashboard</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tab_empresa_tipo" role="tab">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab_medico_especialidad_detalle" role="tab">Detalle</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab_empresa_tipo_detalle" role="tab">Detalle</a>
                         </li>
                     </ul>
                 </div>
                 <div class="panel-toolbar">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarMedicoEspecialidad();"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaTipo();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
-                        <div class="tab-pane fade show active" id="tab_medico_especialidad" role="tabpanel">
-                            <div id="dashboard-especialidad" style="min-height: 500px;"></div>
+                    <div class="tab-content p-3 tab-print">
+                        <div class="tab-pane fade show active" id="tab_empresa_tipo" role="tabpanel">
+                            <div id="dashboard-tipo" style="min-height: 300px;"></div>
                         </div>
-                        <div class="tab-pane fade" id="tab_medico_especialidad_detalle" role="tabpanel">
+                        <div class="tab-pane fade" id="tab_empresa_tipo_detalle" role="tabpanel">
                             <div class="table-responsive">
-                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-especialidad" width="100%">
+                                <table class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline" id="dt-tabla-tipo" width="100%">
                                     <thead>
                                         <tr>
                                             <th>Nro. item</th>
-                                            <th>Especialidad</th>
+                                            <th>Tipo</th>
                                             <th>Cantidad</th>
                                         </tr>
                                     </thead>
@@ -214,13 +212,14 @@
     </div>
     <div class="container-fluid" style="padding-top: 15px;">
         <p style="font-size: 15px;">
-            Fuente: &nbsp;&nbsp;<a href="javascript:void(0)" onclick="window.open('https://www.cmp.org.pe/conoce-a-tu-medico/');">
-                https://www.cmp.org.pe/conoce-a-tu-medico/
+            Fuente: &nbsp;&nbsp;<a href="javascript:void(0)" onclick="window.open('https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/frameCriterioBusqueda.jsp');">
+                https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/frameCriterioBusqueda.jsp
             </a>
         </p>
     </div>
 </div>
 
+
 @section scripts{
-    @Scripts.Render("~/Scripts/Dashboard/Medicos.js")
+    @Scripts.Render("~/Scripts/Demo/Empresa.js")
 }

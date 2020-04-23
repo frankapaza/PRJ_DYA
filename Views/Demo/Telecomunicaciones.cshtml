@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Telecomunicaciones";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Demo.cshtml";
 }
 
 <ol class="breadcrumb page-breadcrumb">
@@ -42,7 +42,7 @@
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="tab-content p-3">
+                    <div class="tab-content p-3 tab-print">
                         <div class="tab-pane fade show active" id="tab_telecomunicacion_marketshare" role="tabpanel">
                             <div id="dashboard-marketshare" style="min-height: 300px;"></div>
                         </div>
@@ -67,7 +67,7 @@
     </div>
     <div class="container-fluid text-center" style="padding-top: 15px;">
         <p style="font-size: 15px;">
-            A través de nuestros sistemas de <strong>Speech Analytics</strong>, podemos escuchar y detectar automáticamente el <br />
+            A través de nuestros sistemas de <strong>Speech Analytics</strong>, podemos escuchar y detectar automáticamente el<br />
             timbrado (Ejem: "Bienvenido a tu operador") catalogando más de 20 millones de teléfonos.
         </p>
     </div>
@@ -75,5 +75,5 @@
 
 
 @section scripts{
-    @Scripts.Render("~/Scripts/Dashboard/Telecomunicaciones.js")
+    @Scripts.Render("~/Scripts/Demo/Telecomunicaciones.js")
 }

@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    $("#btn_siguiente").click(validar);
     $("#btn_registrar").click(registrar);
 
     $("#txt_nombre").keypress(function () {
@@ -24,6 +25,7 @@
     });
     $("#chk_terminos_condiciones").change(function () {
         $("label[for=chk_terminos_condiciones]").next(".invalid-feedback").css("display", "none");
+        $('#footer_terminos').css("padding-top", "");
     });
 });
 
@@ -36,6 +38,43 @@ function limpiar() {
     $("#txt_usuario").next(".invalid-feedback").css("display", "none");
     $("#txt_password").next(".invalid-feedback").css("display", "none");
     $("label[for=chk_terminos_condiciones]").next(".invalid-feedback").css("display", "none");
+    $('#footer_terminos').css("padding-top", "");
+}
+
+function validar() {
+    limpiar();
+    var flgRegistrar = true;
+    if ($.trim($("#txt_nombre").val()) == "") {
+        $("#txt_nombre").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if ($.trim($("#txt_apellido").val()) == "") {
+        $("#txt_apellido").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if ($.trim($("#txt_documento").val()) == "") {
+        $("#txt_documento").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if ($.trim($("#txt_email").val()) == "") {
+        $("#txt_email").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if ($.trim($("#txt_celular").val()) == "") {
+        $("#txt_celular").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if ($.trim($("#txt_usuario").val()) == "") {
+        $("#txt_usuario").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if ($.trim($("#txt_password").val()) == "") {
+        $("#txt_password").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }
+    if (flgRegistrar) {
+        $("#modal_terminos").modal();
+    }
 }
 
 function registrar() {
@@ -80,6 +119,7 @@ function registrar() {
 
     if ($("#chk_terminos_condiciones").is(":checked") == false) {
         $("label[for=chk_terminos_condiciones]").next(".invalid-feedback").css("display", "block");
+        $('#footer_terminos').css("padding-top", "11px");
         flgRegistrar = false;
     }
 

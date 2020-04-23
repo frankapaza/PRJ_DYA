@@ -1,10 +1,14 @@
 ﻿$(document).ready(function () {
-    $("#txt_usuario,#txt_password").keyup(function (e) {
-        if (e.keyCode == 13)
-            login();
-    });
+    if ($("#txt_usuario,#txt_password") == null) {
+        alert("VAlidados");
+    } else {
+        $("#txt_usuario,#txt_password").keyup(function (e) {
+            if (e.keyCode == 13)
+                login();
+        });
 
-    $("#btn_login").click(login);
+        $("#btn_login").click(login);
+    }
 });
 
 function login() {

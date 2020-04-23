@@ -78,7 +78,7 @@
 		wow.init();
 	}
 
-	//Contact Form Validation
+	/*//Contact Form Validation
 	if($('#contact-form').length){
 		$('#contact-form').validate({
 			rules: {
@@ -101,7 +101,7 @@
 			}
 		});
 	}
-
+	*/
 	//Fact Counter + Text Count
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
