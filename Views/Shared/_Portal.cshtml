@@ -22,6 +22,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     @Styles.Render("~/Content/css/notifications/sweetalert2/sweetalert2.bundle.css")
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="~/Content/mobile-responsive/responsive_portal.css">
     <link href="~/Content/portal/css/font-awesome-all.css" rel="stylesheet">
     <link href="~/Content/portal/css/flaticon.css" rel="stylesheet">
     <link href="~/Content/portal/css/my-flaticon/flaticon.css" rel="stylesheet">
@@ -170,13 +171,15 @@
         </div>*@
     <!-- search-popup end -->
 
-    <header class="main-header style-five home-onepage">
+    <header class="main-header style-one home-1">
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-3 col-md-12 col-sm-12 logo-column">
                     <div class="logo-box style-two">
                         <figure class="logo">
-                            <a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 215px;"></a>
+                            <a href="https://localhost:44357/">
+                                <img id="logo-responsive" src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 215px;">
+                            </a>
                         </figure>
                     </div>
                 </div>
@@ -186,14 +189,14 @@
                             <div class="top-right pull-right clearfix">
                                 <div class="support" style="margin-top: 2px;"><span>Contáctenos por: </span></div>
                                 <ul class="social-links clearfix">
-                                    <li><a href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                                 @*<div class="search-box-outer">
                                         <form action="index.html" method="post" class="search-btn">
                                             <button type="button" class="search-toggler"><i class="flaticon-search"></i>Buscar</button>
                                         </form>
                                     </div>*@
-                                <div class="support" style="margin-top: 4px; margin-left: 14px;">
+                                <div id="iniciar-sesion" class="support" style="margin-top: 4px; margin-left: 14px;">
                                     <a href="https://localhost:44357/Seguridad/IngresoSistema">Iniciar Sesión</a>
                                 </div>
                             </div>
@@ -218,6 +221,9 @@
                                         </ul>
                                     </div>
                                 </nav>
+                                <div id="button-demo-style" class="btn-box" style="display: none;">
+                                    <a href="https://localhost:44357/Portal/RedirectUrlSector?p=Demografico" class="theme-btn style-one">Prueba Ahora<span>+</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -228,7 +234,7 @@
         <!--sticky Header-->
         <div class="sticky-header">
             <div class="auto-container clearfix">
-                <figure class="logo-box"><a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 80px;"></a></figure>
+                <figure class="logo-box"><a href="https://localhost:44357/"><img src="~/Content/portal/images/logotipos-06.png" alt="" style="width: 80px;"></a></figure>
                 <div class="menu-area">
                     <nav class="main-menu clearfix">
                         <!--Keep This Empty / Menu will come through Javascript-->
@@ -247,25 +253,12 @@
         <div class="close-btn"><i class="fas fa-times"></i></div>
 
         <nav class="menu-box">
-            <div class="nav-logo"><a href="index.html"><img src="~/Content/portal/images/logotipos-06.png" alt="" title=""></a></div>
+            <div class="nav-logo">
+                <a href="https://localhost:44357/">
+                    <img src="~/Content/portal/images/logotipos-06-only.png" alt="" style="width: 135px;">
+                </a>
+            </div>
             <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            <div class="contact-info">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Chicago 12, Melborne City, USA</li>
-                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <ul class="clearfix">
-                    <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
-                </ul>
-            </div>
         </nav>
     </div>
     <!-- End Mobile Menu -->

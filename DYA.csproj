@@ -218,6 +218,7 @@
     <Content Include="Content\img\card-backgrounds\cover-4-lg.png" />
     <Content Include="Content\img\card-backgrounds\cover-5-lg.png" />
     <Content Include="Content\img\card-backgrounds\cover-6-lg.png" />
+    <Content Include="Content\img\clouds.png" />
     <Content Include="Content\img\demo\angular.png" />
     <Content Include="Content\img\demo\authors\josh.png" />
     <Content Include="Content\img\demo\authors\jovanni.png" />
@@ -493,6 +494,9 @@
     <Content Include="Content\media\video\36150715-heavenly-clouds-v2-license.txt" />
     <Content Include="Content\media\video\cc.mp4" />
     <Content Include="Content\media\video\cc.webm" />
+    <Content Include="Content\mobile-responsive\responsive_portal.css" />
+    <Content Include="Content\mobile-responsive\responsive_empty.css" />
+    <Content Include="Content\mobile-responsive\responsive_login.css" />
     <Content Include="Content\portal\css\animate.css" />
     <Content Include="Content\portal\css\bootstrap.css" />
     <Content Include="Content\portal\css\color.css" />

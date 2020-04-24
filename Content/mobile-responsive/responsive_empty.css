@@ -1,0 +1,16 @@
+﻿@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .auto-container {
+        margin: 0px 20px !important;
+    }
+    .fixing-footer {
+        text-align: center !important;
+    }
+    #footer_terminos {
+        padding-top: 15px; 
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+
+
+}

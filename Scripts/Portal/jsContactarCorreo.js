@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+﻿
+$(document).ready(function () {
     $("#btn_enviar").click(enviarMail);
 
     $("#txt_nombre").keypress(function () {

@@ -24,7 +24,7 @@
                     <div class="content-box">
                         <h1 class="wow slideInLeft" data-wow-delay="000ms" data-wow-duration="1500ms">Transforma información en</h1>
                         <h1 class="wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="color: rgb(64, 152, 116) !important; font-size: 72px;">Conocimiento</h1>
-                        <div class="btn-box" style="margin-top: 46px;">
+                        <div id="button-demo-desk" class="btn-box" style="margin-top: 46px;">
                             <a href="https://localhost:44357/Portal/RedirectUrlSector?p=Demografico" class="theme-btn style-one">Prueba Ahora<span>+</span></a>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
         </div>
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div class="content-box">
                         <div class="sec-title text-left light">
                             <h2 style="font-size: 30px;">Ingresa al sector de tu interés <br> y mira  todo lo que puedes hacer <br> con DYA</h2>
@@ -87,7 +87,7 @@
                         <div class="inner">
                             <h4>
                                 <a href="javascript:void(0)">Médicos</a><br>
-                                <span style="font-weight: lighter !important; text-align: justify; padding-top: 18px;">
+                                <span id="span-medicos" style="font-weight: lighter !important; text-align: justify; padding-top: 18px;">
                                     Ideal para el sector farmacéutico y de investigación clínica, segmentando a los médicos por ubicación, especialidad o estado.
                                 </span>
                             </h4>
@@ -125,7 +125,7 @@
                         <div class="inner">
                             <h4>
                                 <a href="javascript:void(0)">Empresarial</a><br>
-                                <span style="font-weight: lighter !important; text-align: justify; padding-top: 18px;">
+                                <span id="span-empresarial" style="font-weight: lighter !important; text-align: justify; padding-top: 18px;">
                                     Accede a los giros de negocio y ubicaciones de las empresas del mercado actual para analizar oportunidades de negocio.
                                 </span>
                             </h4>
@@ -144,7 +144,7 @@
                         <div class="inner">
                             <h4>
                                 <a href="javascript:void(0)">Automotriz</a><br>
-                                <span style="font-weight: lighter !important; text-align: justify; padding-top: 18px;">
+                                <span id="span-automotor" style="font-weight: lighter !important; text-align: justify; padding-top: 18px;">
                                     Parque automotor del Perú clasificado por marcas, modelos, antigüedad, entre otros.<br>&nbsp;
                                 </span>
                             </h4>
@@ -258,7 +258,7 @@
     <section class="fun-fact text-center" id="sec_curioso">
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-4 col-md-6 col-sm-12 counter-block">
+                <div class="col-lg-4 col-md-12 col-sm-12 counter-block" id="bloque-fun-fact">
                     <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="icon-box"><i class="flaticon-big-data"></i></div>
@@ -299,7 +299,7 @@
     <section class="about-style-five bg-color-1" id="sec_legalidad">
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-7 col-md-6 col-sm-12 content-column">
+                <div class="col-lg-7 col-md-12 col-sm-12 content-column">
                     <div id="content_block_10">
                         <div class="content-box">
                             <div class="sec-title text-left">
@@ -318,12 +318,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12 image-column">
+                <div class="col-lg-5 col-md-12 col-sm-12 image-column">
                     <div id="image_block_04">
                         <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <figure class="image image-2 wow slideInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                                 <a href="~/Content/portal/images/ley-29733/pagina1.jpg" data-fancybox="gallery">
-                                    <img src="~/Content/portal/images/ley-29733/pagina1.jpg" alt="" style="margin-left: 115px; width: 70%; border: 1px solid #e0e0e0;">
+                                    <img id="imagen-legalidad" src="~/Content/portal/images/ley-29733/pagina1.jpg" alt="" style="margin-left: 115px; width: 70%; border: 1px solid #e0e0e0;">
                                 </a>
                                 <a href="~/Content/portal/images/ley-29733/pagina2.jpg" data-fancybox="gallery"></a>
                                 <a href="~/Content/portal/images/ley-29733/pagina3.jpg" data-fancybox="gallery"></a>
@@ -453,14 +453,14 @@
                                 <h3 class="text-center">Si tienes alguna duda o pregunta, <br>Comunicate con nosotros</h3>
                                 <br>
                                 <div class="form-row" style="margin-top: 10px;">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label><i class="fas fa-user-tie"></i>Tu Nombre / Empresa</label>
                                             <input type="text" id="txt_nombre" placeholder="Ingrese nombre aqui" required>
                                             <div class="invalid-feedback">Debe ingresar su nombre</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label><i class="far fa-envelope"></i>Correo Electrónico</label>
                                             <input type="email" id="txt_email" placeholder="Correo Electrónico" required>
@@ -469,7 +469,7 @@
                                     </div>
                                 </div>
                                 <div class="form-row" style="margin-top: 15px;">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label><i class="fas fa-business-time"></i>¿De qué área nos describe?</label>
                                             <select class="form-control" id="txt_area" required style="height: 55px;">
@@ -485,7 +485,7 @@
                                             <div class="invalid-feedback">Seleccione alguna area de interés.</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label><i class="fas fa-globe"></i>Sector</label>
                                             <select class="form-control" id="txt_sector" required style="height: 55px;">
