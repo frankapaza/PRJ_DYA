@@ -27,82 +27,77 @@
                 </div>
                 <div class="auto-container">
                     <div class="row clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-column">
                             <div class="content-box">
                                 <div class="sec-title text-center light">
                                     <h2 class="fs-xxl fw-500 text-white">
-                                        Registrese ahora, ¡es gratis!
-                                        <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60 hidden-sm-down" style="font-size: 22px;">
-                                            Tu registro tiene 7 dias gratis. Puedes ver el aplicativo en movil, escritorio o tablet.
-                                            <br>¡Es hora de registrarse ahora!
+                                        Registrese ahora, <br id="br-title" style="display: none;"/>¡Es gratis!
+                                        <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60" style="font-size: 22px;">
+                                            Tu registro tiene 30 dias gratis. Puedes ver el aplicativo en movil, escritorio o tablet.
                                         </small>
                                     </h2>
                                     <div class="decor" style="background-image: url(https://localhost:44357/Content/portal/images/icons/decor-2.png); margin-top: 10px;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-column">
                             <div id="content_block_09">
                                 <div class="content-box">
                                     <div id="contact-form" class="default-form" style="padding: 40px 50px 56px 50px;">
                                         <div class="form-row">
-                                            <label class="col-xl-12 form-label" for="txt_nombre">Datos personales:</label>
-                                            <div class="form-group col">
-                                                <label><i class="far fa-user"></i>Tu primer nombre</label>
-                                                <input type="text" id="txt_nombre" class="form-control" placeholder="Ingrese nombre" required>
+                                            <label class="col-xl-12 form-label" for="txt_nombre" style="margin-bottom: 20px;">Ingrese sus datos en este formulario:</label>
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                <label><i class="far fa-user"></i>Tu nombre</label>
+                                                <input type="text" id="txt_nombre" class="form-control" placeholder="Ingrese nombre" required pattern="[a-zA-z]">
                                                 <div class="invalid-feedback">Debe ingresar un nombre.</div>
                                             </div>
-                                            <div class="form-group col">
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                 <label><i class="fas fa-users"></i>Apellido</label>
                                                 <input type="text" id="txt_apellido" class="form-control" placeholder="Ingrese apellido" required>
-                                                <div class="invalid-feedback">Debe ingresar su apellido.</div>
+                                                <div class="invalid-feedback">Debe ingresar apellido.</div>
                                             </div>
-                                            <div class="form-group col">
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                 <label><i class="fas fa-portrait"></i>Nro. Documento</label>
                                                 <input type="text" id="txt_documento" class="form-control" pattern="[1-9]{8}" placeholder="Ingrese su DNI" maxlength="8"
                                                        title="Debe ingresar correctamente 8 digitos.">
                                                 <div class="invalid-feedback">Debe ingresar su numero de documento.</div>
                                             </div>
                                         </div>
-                                        <div class="form-row">
-                                            <label class="col-xl-12 form-label" for="txt_nombre">Datos de contacto:</label>
-                                            <div class="form-group col">
-                                                <label><i class="far fa-envelope"></i>Correo electronico</label>
-                                                <input type="email" id="txt_email" class="form-control" placeholder="Ingrese email" required>
-                                                <div class="invalid-feedback">Ingrese su email.</div>
-                                                <div class="help-block" style="display:none;">Your email will also be your username</div>
-                                            </div>
-                                            <div class="form-group col">
+                                        <div class="form-row" id="row-segundo">
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <label><i class="fas fa-phone-square"></i>Celular</label>
                                                 <input type="text" id="txt_celular" class="form-control" placeholder="Ingrese celular corporativo" required>
                                                 <div class="invalid-feedback">Ingrese su celular corporativo.</div>
                                             </div>
-                                            <div class="form-group col">
-                                                <label><i class="fas fa-phone"></i>Telefono (Opcional)</label>
-                                                <input type="text" id="txt_telefono" class="form-control" placeholder="Ingrese telefono personal">
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <label><i class="fas fa-building"></i>Nombre de empresa</label>
+                                                <input type="text" id="txt_empresa" class="form-control" placeholder="Ingrese nombre de empresa">
+                                                <div class="invalid-feedback">Ingrese el nombre de empresa.</div>
                                             </div>
                                         </div>
-                                        <div class="form-row" style="margin-top: 10px;">
-                                            <label class="col-xl-12 form-label" for="txt_usuario" style="margin-bottom: 20px;">Ingrese su Usuario y Password: <br>Con estas credenciales usted podra ingresar al aplicativo.</label>
-                                            <div class="form-group col">
-                                                <label><i class="fas fa-user-plus"></i>Usuario</label>
-                                                <input type="text" id="txt_usuario" class="form-control" placeholder="Ingrese nombre de usuario" required>
-                                                <div class="invalid-feedback">Ingrese un nombre de usuario.</div>
+                                        <div class="form-row" style="margin-top: 10px;" id="row-tercero">
+                                            <label class="col-xl-12 form-label" for="txt_usuario" style="margin-bottom: 20px;">
+                                            Ingrese su correo electrónico y password: <br>Con estas credenciales usted podrá ingresar al aplicativo.
+                                            </label>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <label><i class="far fa-envelope"></i>Correo electrónico corporativo</label>
+                                                <input type="email" id="txt_email" class="form-control" placeholder="Ingrese email" required>
+                                                <div class="invalid-feedback">Al ser una plataforma B2B, solo se acepta la inscripción al servicio mediante un correo corporativo, que será validado mediante un correo de confirmación, el cual le llegará al correo ingresado en nuestra plataforma.</div>
                                             </div>
-                                            <div class="form-group col">
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <label><i class="fas fa-key"></i>Contraseña</label>
                                                 <input type="password" id="txt_password" class="form-control" placeholder="Ingrese contraseña" style="height: 55px;" required>
-                                                <div class="invalid-feedback">Campo obligatorio. Debe ingresar una contraseña.</div>
+                                                <div class="invalid-feedback">Campo obligatorio. Debe ingresar una contraseña minimo de 6 - 15 caracteres y sin espacios.</div>
                                             </div>
                                         </div>
-                                        <div class="row" style="padding-top: 18px;">
-                                            <div class="col-4">&nbsp;</div>
-                                            <div class="col-4">
+                                        <div class="row" style="padding-top: 18px;" id="row-cuarto">
+                                            <div class="col-lg-4 col-md-4 col-sm-1">&nbsp;</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
                                                 <div class="form-group">
                                                     <button class="theme-btn style-one waves-effect waves-themed" type="button" id="btn_siguiente">Siguiente</button>
                                                 </div>
                                             </div>
-                                            <div class="col-4">&nbsp;</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-1">&nbsp;</div>
                                         </div>
                                      </div>
                                 </div>
@@ -148,8 +143,8 @@
                                 Mediante la presente se le dan a conocer nuestros términos de uso y condiciones, para que entienda más nuestra plataforma.
                                 <br />
                                 <ol style="padding-top: 8px;">
-                                    <li>1. Al ser una plataforma B2B, solo se acepta la inscripción al servicio mediante un correo corporativo, el cual será validado mediante un correo de confirmación, el cual le llegará al correo ingresado en nuestra plataforma.</li>
-                                    <li>2. Usted acepta que nos contactemos con usted mediante correos electrónicos para brindarle información más detallada de lo que puede lograr con esta plataforma.</li>
+									<li>1. Al ser una plataforma B2B, solo se acepta la inscripción al servicio mediante un correo corporativo, que será validado mediante un correo de confirmación, el cual le llegará al correo ingresado en nuestra plataforma.</li>
+									<li>2. Usted acepta que nos contactemos con usted mediante correos electrónicos para brindarle información más detallada de lo que puede lograr con esta plataforma.</li>
                                     <li>3. Usted declara que toda la información que presenta es cierta y acepta que los datos que se recopilan a través de este formulario serán usados por la compañía de manera interna.</li>
                                     <li>4. En caso de darle un uso inadecuado al servicio (accesos indebidos, reventa del servicio o lucrar de alguna manera con el mismo) al mismo momento de su detección, su cuenta será inhabilitada indefinidamente, no teniendo ninguna opción a reclamo.</li>
                                 </ol>
@@ -228,7 +223,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 fixing-footer" style="text-align: right;" id="footer_terminos">
-                        <button type="button" class="btn btn-secondary waves-effect waves-themed" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary waves-effect waves-themed" data-dismiss="modal">Cerrar</button>
                         <button class="btn btn-success waves-effect waves-themed" id="btn_registrar" type="submit">Enviar verificación</button>
                     </div>
                 </div>

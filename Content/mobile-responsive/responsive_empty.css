@@ -1,16 +1,195 @@
-﻿@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .auto-container {
-        margin: 0px 20px !important;
-    }
+﻿/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1335px) {
+}
+
+/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 816px) and (max-device-width : 1023px) {
+}
+
+/*RESPONSIVE IPAD/TABLET/ (VERTIRCAL) IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 811px) {
     .fixing-footer {
         text-align: center !important;
     }
     #footer_terminos {
-        padding-top: 15px; 
+        padding-top: 15px;
     }
     .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
         padding-top: 75px;
     }
+}
 
+/*RESPONSIVE IPHONE 6/7/8 PLUS (HORIZONTAL) */
+@media only screen and (min-device-width : 736px) and (max-device-width : 767px) {
+    .fixing-footer {
+        text-align: center !important;
+    }
+    #footer_terminos {
+        padding-top: 15px;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+    #contact-form {
+        padding: 40px 35px 56px 35px !important;
+    }
+    #row-segundo {
+        padding-top: 25px !important;
+    }
+    #row-tercero {
+        padding-top: 25px !important;
+    }
+    #row-cuarto {
+        padding-top: 30px !important;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > nav > .d-flex > .page-logo {
+        margin-right: 230px !important;
+    }
+}
 
+/*RESPONSIVE IPHONE 6/7/8 (HORIZONTAL) */
+@media only screen and (min-device-width: 667px) and (max-device-width: 735px) {
+    .fixing-footer {
+        text-align: center !important;
+    }
+    #footer_terminos {
+        padding-top: 15px;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+    #contact-form {
+        padding: 40px 35px 56px 35px !important;
+    }
+    #row-segundo {
+        padding-top: 25px !important;
+    }
+    #row-tercero {
+        padding-top: 25px !important;
+    }
+    #row-cuarto {
+        padding-top: 30px !important;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > nav > .d-flex > .page-logo {
+        margin-right: 230px !important;
+    }
+}
+
+/*RESPONSIVE GALAXY/PIXEL (HORIZONTAL) */
+@media only screen and (min-device-width: 570px) and (max-device-width: 666px) {
+    .fixing-footer {
+        text-align: center !important;
+    }
+    #footer_terminos {
+        padding-top: 15px;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+    #contact-form {
+        padding: 40px 35px 56px 35px !important;
+    }
+    #row-segundo {
+        padding-top: 25px !important;
+    }
+    #row-tercero {
+        padding-top: 25px !important;
+    }
+    #row-cuarto {
+        padding-top: 30px !important;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > nav > .d-flex > .page-logo {
+        margin-right: 230px !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 5 (HORIZONTAL) */
+@media only screen and (min-device-width: 421px) and (max-device-width: 569px) {
+    .fixing-footer {
+        text-align: center !important;
+    }
+    #footer_terminos {
+        padding-top: 15px;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+    #contact-form {
+        padding: 40px 35px 56px 35px !important;
+    }
+    #row-segundo {
+        padding-top: 25px !important;
+    }
+    #row-tercero {
+        padding-top: 25px !important;
+    }
+    #row-cuarto {
+        padding-top: 30px !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 /PLUS /X - IOs (VERTICAL) */
+@media only screen and (min-device-width: 323px) and (max-device-width: 420px) {
+    .fixing-footer {
+        text-align: center !important;
+    }
+    #footer_terminos {
+        padding-top: 15px;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+    #contact-form {
+        padding: 40px 35px 56px 35px !important;
+    }
+    #row-segundo {
+        padding-top: 25px !important;
+    }
+    #row-tercero {
+        padding-top: 25px !important;
+    }
+    #row-cuarto {
+        padding-top: 30px !important;
+    }
+    #br-title {
+        display: block !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 5 (VERTICAL) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 322px) {
+    .fixing-footer {
+        text-align: center !important;
+    }
+
+    #footer_terminos {
+        padding-top: 15px;
+    }
+
+    .page-wrapper > .page-inner > .page-content-wrapper > .flex-1 > .container > .row {
+        padding-top: 75px;
+    }
+
+    #contact-form {
+        padding: 40px 35px 56px 35px !important;
+    }
+
+    #row-segundo {
+        padding-top: 25px !important;
+    }
+
+    #row-tercero {
+        padding-top: 25px !important;
+    }
+
+    #row-cuarto {
+        padding-top: 30px !important;
+    }
+
+    #br-title {
+        display: block !important;
+    }
+    .page-wrapper > .page-inner > .page-content-wrapper > nav > .d-flex > .page-logo {
+        width: 150px !important;
+    }
 }

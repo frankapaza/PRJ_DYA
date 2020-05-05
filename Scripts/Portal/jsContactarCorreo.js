@@ -1,5 +1,4 @@
-﻿
-$(document).ready(function () {
+﻿$(document).ready(function () {
     $("#btn_enviar").click(enviarMail);
 
     $("#txt_nombre").keypress(function () {
@@ -41,7 +40,7 @@ function enviarMail() {
         flgEnviar = false;
     }
 
-    if ($.trim($("#txt_email").val()) == "") {
+    if (!(/^(?!\.)[a-zA-Z0-9.]+[a-zA-Z0-9]@(?!\.|[0-9]|[a-z]+[0-9])[a-zA-Z](?:[a-zA-Z0-9]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9]{0,61}[a-zA-Z0-9])?)*\.[a-zA-Z]+$.*/.test($.trim($("#txt_email").val())))) {
         $("#txt_email").next(".invalid-feedback").css("display", "block");
         flgEnviar = false;
     }
@@ -83,12 +82,17 @@ function enviarMail() {
             dataType: "json",
             success: function (result) {
                 if (result) {
-                    Swal.fire(
-                        {
-                            title: '¡Correo Enviado!',
-                            text: 'Su correo fue enviado con éxito, se procederá a responderle en respuesta lo más antes posible. Gracias.',
-                            type: 'success'
-                        });
+                    Swal.fire({
+                        title: '¡Correo Enviado!',
+                        text: 'Su correo fue enviado con éxito, se procederá a responderle en respuesta lo más antes posible. Gracias.',
+                        type: 'success'
+                    });
+                    $("#txt_nombre").val("");
+                    $("#txt_email").val("");
+                    $("#txt_area").val("");
+                    $("#txt_sector").val("");
+                    $("#txt_tema").val("");
+                    $("#txt_cuerpo_contenido").val("");
                 } else {
                     msj_peligro("Ocurrio un error, volver a intentar nuevamente.");
                 }

@@ -1,12 +1,243 @@
-﻿@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+﻿/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1335px) {
+    .banner-section {
+        padding: 45px 40px 0px 40px !important;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .about-style-four {
+        padding: 80px 40px 50px 30px !important;
+    }
+
+    .industries-section {
+        padding: 90px 15px 70px 15px !important;
+    }
+
+    .testimonial-style-two {
+        margin: 0px 5px 72px 5px !important;
+    }
+
+    .fun-fact {
+        padding: 15px 50px 110px 50px !important;
+    }
+
+    .about-style-five {
+        padding: 95px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 70px !important;
+        padding: 0px 15px 55px 15px !important;
+    }
+
+    .main-footer .footer-top {
+        padding-bottom: 80px !important;
+    }
+    
+    
+    .slider-image-1 .image-1 {
+        right: 322px !important;
+        top: 125px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: 5px !important;
+        top: 33px !important;
+        display: none;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 44px !important;
+        bottom: 225px !important;
+        display: none;
+    }
+
+    #span-telecom {
+        padding-bottom: 22px;
+    }
+
+    #span-automotor {
+        padding-bottom: 19px;
+    }
+    .about-style-four > .auto-container > .row > .image-column > #image_block_03 > .image-box > figure {
+        left: 100px !important;
+        top: 32px !important;
+    }
+}
+
+/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 816px) and (max-device-width : 1023px) {
     .about-style-four {
         padding: 152px 30px 115px 30px !important;
+    }
+
+    .feature-section {
+        padding: 0px 30px 40px 30px !important;
+    }
+
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .industries-section {
+        padding: 125px 30px 90px 30px !important;
+    }
+
+    .testimonial-style-two {
+        margin: 0px 24px 72px 24px !important;
+    }
+
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+
+    #text-vision {
+        text-align: justify;
+    }
+
+    .fun-fact {
+        padding: 50px 50px 135px 50px !important;
+    }
+
+    .about-style-five {
+        padding: 110px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 80px !important;
+        padding: 0px 30px 65px 30px !important;
+    }
+
+    #image_block_03 .image-box {
+        padding: 0px 59px 0px 99px !important;
+        margin-bottom: 65px !important;
+    }
+
+    .sec-title.text-left {
+        text-align: center !important;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    #bloque-fun-fact {
+        padding: 0px 175px;
+        margin-bottom: 15px;
+    }
+
+    #image_block_04 {
+        margin-top: 50px;
+    }
+
+    #imagen-legalidad {
+        margin-left: 100px !important;
+    }
+
+    #span-medicos {
+        padding-bottom: 19px;
+    }
+
+    #span-empresarial {
+        padding-bottom: 19px;
+    }
+
+    #span-automotor {
+        padding-bottom: 19px;
+    }
+
+    .copyright.pull-left {
+        padding-left: 18px;
+    }
+
+    .support {
+        font-size: 20px !important;
+    }
+
+    .social-links.clearfix {
+        font-size: 20px !important;
+    }
+
+    .header-top.clearfix {
+        padding: 18px 0px;
+    }
+
+    .header-top .social-links {
+        margin-left: -3px !important;
+    }
+
+    #iniciar-sesion {
+        margin-left: 315px !important;
+    }
+
+    #logo-responsive {
+        width: 150px !important;
+    }
+
+    #button-demo-style {
+        display: block !important;
+    }
+
+    #button-demo-desk {
+        display: none;
+    }
+
+    .banner-section > .auto-container > .row > .content-column > .content-box > h1 {
+        text-align: center;
+    }
+
+    .slider-image-1 .image-1 {
+        right: 65px !important;
+        top: -5px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: 5px !important;
+        top: 33px !important;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 44px !important;
+        bottom: 225px !important;
+    }
+
+    .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
+        text-align: center;
+    }
+}
+
+/*RESPONSIVE IPAD/TABLET/ (VERTIRCAL) IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 815px) {
+    .about-style-four {
+        padding: 152px 30px 115px 30px !important;
+    }
+
+    .feature-section {
+        padding: 0px 30px 40px 30px !important;
+    }
+
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
     }
     .industries-section {
         padding: 125px 30px 90px 30px !important;
     }
     .testimonial-style-two {
         margin: 0px 24px 72px 24px !important;
+    }
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+    #text-vision {
+        text-align: justify;
     }
     .fun-fact {
         padding: 50px 50px 135px 50px !important;
@@ -44,9 +275,7 @@
     #span-empresarial {
         padding-bottom: 19px;
     }
-    #span-automotor {
-        padding-bottom: 19px;
-    }
+
     .copyright.pull-left {
         padding-left: 18px;
     }
@@ -78,19 +307,759 @@
         text-align: center;
     }
     .slider-image-1 .image-1 {
-        right: 90px !important;
+        right: 35px !important;
         top: -5px !important;
     }
     .slider-image-1 .image-5 {
-        left: 5px !important;
+        left: 40px !important;
         top: 33px !important;
     }
     .slider-image-1 .image-4 {
-        left: 44px !important;
+        left: 85px !important;
         bottom: 225px !important;
     }
     .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
         text-align: center;
     }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 PLUS (HORIZONTAL) */
+@media only screen and (min-device-width : 736px) and (max-device-width : 767px) {
+    .banner-section {
+        padding: 285px 22px 0px 22px !important;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .banner-section > .auto-container > .row > .image-column {
+        padding-top: 40px;
+    }
+
+    .about-style-four {
+        padding: 152px 30px 115px 30px !important;
+    }
+
+    .feature-section {
+        padding: 0px 30px 40px 30px !important;
+    }
+
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+
+    .slider-image-1 {
+        display: block !important;
+    }
+
+    .industries-section {
+        padding: 125px 30px 90px 30px !important;
+    }
+
+    .testimonial-style-two {
+        margin: 0px 24px 72px 24px !important;
+    }
+
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+
+    #text-vision {
+        text-align: justify;
+    }
+
+    .fun-fact {
+        padding: 50px 50px 135px 50px !important;
+    }
+
+    .about-style-five {
+        padding: 110px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 80px !important;
+        padding: 0px 30px 65px 30px !important;
+    }
+
+    #image_block_03 .image-box {
+        padding: 0px 59px 0px 99px !important;
+        margin-bottom: 65px !important;
+    }
+
+    .sec-title.text-left {
+        text-align: center !important;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    #bloque-fun-fact {
+        padding: 0px 175px;
+        margin-bottom: 15px;
+    }
+
+    #image_block_04 {
+        margin-top: 50px;
+    }
+
+    #imagen-legalidad {
+        margin-left: 100px !important;
+    }
+
+    #span-medicos {
+        padding-bottom: 40px;
+    }
+
+    #span-empresarial {
+        padding-bottom: 19px;
+    }
+
+    #span-automotor {
+        padding-bottom: 19px;
+    }
+
+    .copyright.pull-left {
+        padding-left: 18px;
+    }
+
+    .support {
+        font-size: 20px !important;
+    }
+
+    .social-links.clearfix {
+        font-size: 20px !important;
+    }
+
+    .header-top.clearfix {
+        padding: 18px 0px;
+    }
+
+    .header-top .social-links {
+        margin-left: -3px !important;
+    }
+
+    #iniciar-sesion {
+        margin-left: 315px !important;
+    }
+
+    #logo-responsive {
+        width: 150px !important;
+    }
+
+    #button-demo-style {
+        display: block !important;
+    }
+
+    #button-demo-desk {
+        display: none;
+    }
+
+    .banner-section > .auto-container > .row > .content-column > .content-box > h1 {
+        text-align: center;
+    }
+
+    .slider-image-1 .image-1 {
+        right: 110px !important;
+        top: -5px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: -5px !important;
+        top: 33px !important;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 36px !important;
+        bottom: 225px !important;
+    }
+
+    .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
+        text-align: center;
+    }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 (HORIZONTAL) */
+@media only screen and (min-device-width: 667px) and (max-device-width: 735px) {
+    .banner-section {
+        padding: 280px 0px 55px 0px !important;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .about-style-four {
+        padding: 152px 30px 115px 30px !important;
+    }
+
+    .feature-section {
+        padding: 0px 30px 40px 30px !important;
+    }
+
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+
+    .industries-section {
+        padding: 125px 30px 90px 30px !important;
+    }
+
+    .testimonial-style-two {
+        margin: 0px 24px 72px 24px !important;
+    }
+
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+
+    #text-vision {
+        text-align: justify;
+    }
+
+    .fun-fact {
+        padding: 50px 50px 135px 50px !important;
+    }
+
+    .about-style-five {
+        padding: 110px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 80px !important;
+        padding: 0px 30px 65px 30px !important;
+    }
+
+    #image_block_03 .image-box {
+        padding: 0px 100px 0px 99px !important;
+        margin-bottom: 65px !important;
+    }
+
+    .sec-title.text-left {
+        text-align: center !important;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    #bloque-fun-fact {
+        padding: 0px 175px;
+        margin-bottom: 15px;
+    }
+
+    #image_block_04 {
+        margin-top: 50px;
+    }
+
+    #imagen-legalidad {
+        margin-left: 100px !important;
+    }
+
+    .copyright.pull-left {
+        padding-left: 18px;
+    }
+
+    .support {
+        font-size: 20px !important;
+    }
+
+    .social-links.clearfix {
+        font-size: 20px !important;
+    }
+
+    .header-top.clearfix {
+        padding: 18px 0px;
+    }
+
+    .header-top .social-links {
+        margin-left: -3px !important;
+    }
+
+    #iniciar-sesion {
+        margin-left: 55px !important;
+    }
+
+    #logo-responsive {
+        width: 150px !important;
+    }
+
+    #button-demo-style {
+        display: block !important;
+    }
+
+    #button-demo-desk {
+        display: none;
+    }
+
+    .banner-section > .auto-container > .row > .content-column > .content-box > h1 {
+        text-align: center;
+    }
+
+    .slider-image-1 .image-1 {
+        right: 90px !important;
+        top: -5px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: 5px !important;
+        top: 33px !important;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 44px !important;
+        bottom: 225px !important;
+    }
+
+    .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
+        text-align: center;
+    }
+}
+
+/*RESPONSIVE GALAXY/PIXEL (HORIZONTAL) */
+@media only screen and (min-device-width: 570px) and (max-device-width: 666px) {
+    .banner-section {
+        padding: 280px 0px 55px 0px !important;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .about-style-four {
+        padding: 152px 30px 115px 30px !important;
+    }
+    .feature-section {
+        padding: 0px 30px 40px 30px !important;
+    }
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+    .industries-section {
+        padding: 125px 30px 90px 30px !important;
+    }
+
+    .testimonial-style-two {
+        margin: 0px 24px 72px 24px !important;
+    }
+
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+
+    #text-vision {
+        text-align: justify;
+    }
+
+    .fun-fact {
+        padding: 50px 50px 135px 50px !important;
+    }
+
+    .about-style-five {
+        padding: 110px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 80px !important;
+        padding: 0px 30px 65px 30px !important;
+    }
+
+    #image_block_03 .image-box {
+        padding: 0px 100px 0px 99px !important;
+        margin-bottom: 65px !important;
+    }
+
+    .sec-title.text-left {
+        text-align: center !important;
+    }
+
+    #span-medicos {
+        padding-bottom: 22px;
+    }
+
+    #span-empresarial {
+        padding-bottom: 19px;
+    }
+
+    #span-automotor {
+        padding-bottom: 19px;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    #bloque-fun-fact {
+        padding: 0px 175px;
+        margin-bottom: 15px;
+    }
+
+    #image_block_04 {
+        margin-top: 50px;
+    }
+
+    #imagen-legalidad {
+        margin-left: 100px !important;
+    }
+
+    .copyright.pull-left {
+        padding-left: 18px;
+    }
+
+    .support {
+        font-size: 20px !important;
+    }
+
+    .social-links.clearfix {
+        font-size: 20px !important;
+    }
+
+    .header-top.clearfix {
+        padding: 18px 0px;
+    }
+
+    .header-top .social-links {
+        margin-left: -3px !important;
+    }
+
+    #iniciar-sesion {
+        margin-left: 55px !important;
+    }
+
+    #logo-responsive {
+        width: 150px !important;
+    }
+
+    #button-demo-style {
+        display: block !important;
+    }
+
+    #button-demo-desk {
+        display: none;
+    }
+
+    .banner-section > .auto-container > .row > .content-column > .content-box > h1 {
+        text-align: center;
+    }
+
+    .slider-image-1 .image-1 {
+        right: 90px !important;
+        top: -5px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: 5px !important;
+        top: 33px !important;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 44px !important;
+        bottom: 225px !important;
+    }
+
+    .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
+        text-align: center;
+    }
+}
+
+/*RESPONSIVE IPHONE 5 (HORIZONTAL) */
+@media only screen and (min-device-width: 421px) and (max-device-width: 569px) {
+    .banner-section {
+        padding: 280px 0px 55px 0px !important;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .about-style-four {
+        padding: 152px 30px 115px 30px !important;
+    }
+    .feature-section {
+        padding: 0px 30px 40px 30px !important;
+    }
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+    .industries-section {
+        padding: 125px 30px 90px 30px !important;
+    }
+
+    .industries-section > .auto-container > .row > .inner-column {
+        padding: 0px 72px !important;
+    }
+
+    .testimonial-style-two {
+        margin: 0px 24px 72px 24px !important;
+    }
+
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+
+    #text-vision {
+        text-align: justify;
+    }
+
+    .fun-fact {
+        padding: 10px 140px 110px 158px !important;
+    }
+
+    .about-style-five {
+        padding: 110px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 80px !important;
+        padding: 0px 30px 65px 30px !important;
+    }
+
+    #image_block_03 .image-box {
+        padding: 0px 80px 0px 80px !important;
+        margin-bottom: 65px !important;
+    }
+
+    .sec-title.text-left {
+        text-align: center !important;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    #bloque-fun-fact {
+        padding: 0px 0px;
+        margin-bottom: 15px;
+    }
+
+    #image_block_04 {
+        margin-top: 50px;
+    }
+
+    #imagen-legalidad {
+        margin-left: 67px !important;
+    }
+
+    .copyright.pull-left {
+        padding-left: 18px;
+    }
+
+    .support {
+        font-size: 20px !important;
+    }
+
+    .social-links.clearfix {
+        font-size: 20px !important;
+    }
+
+    .header-top.clearfix {
+        padding: 18px 0px;
+    }
+
+    .header-top .social-links {
+        margin-left: -3px !important;
+    }
+
+    #iniciar-sesion {
+        margin-left: 55px !important;
+    }
+
+    #logo-responsive {
+        width: 150px !important;
+    }
+
+    #button-demo-style {
+        display: block !important;
+    }
+
+    #button-demo-desk {
+        display: none;
+    }
+
+    .banner-section > .auto-container > .row > .content-column > .content-box > h1 {
+        text-align: center;
+    }
+
+    .slider-image-1 .image-1 {
+        right: 90px !important;
+        top: -5px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: 5px !important;
+        top: 33px !important;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 44px !important;
+        bottom: 225px !important;
+    }
+
+    .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
+        text-align: center;
+    }
+}
+
+/*RESPONSIVE IPHONE 5/ 6/7/8 /PLUS /X - IOs (VERTICAL) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 420px) {
+    .banner-section {
+        padding: 280px 0px 45px 0px !important;
+    }
+    #h1-conocimiento {
+        color: #409874 !important;
+    }
+    .about-style-four {
+        padding: 80px 30px 50px 30px !important;
+    }
+    .feature-section {
+        padding: 0px 10px 40px 10px !important;
+    }
+    .feature-section > .auto-container > .row > .feature-block {
+        padding: 20px 0px;
+    }
+    .industries-section {
+        padding: 90px 15px 70px 15px !important;
+    }
+    .testimonial-style-two {
+        margin: 0px 5px 72px 5px !important;
+    }
+
+    #text-mision {
+        text-align: justify;
+        width: 100% !important;
+    }
+
+    #text-vision {
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+
+    .fun-fact {
+        padding: 15px 50px 110px 50px !important;
+    }
+
+    .about-style-five {
+        padding: 95px 30px !important;
+    }
+
+    .contact-section.alternate-2 {
+        margin-top: 70px !important;
+        padding: 0px 15px 55px 15px !important;
+    }
+
+    .main-footer .footer-top {
+        padding-bottom: 80px !important;
+    }
+
+    #image_block_03 .image-box {
+        padding: 0px 10px 0px 10px !important;
+    }
+
+    #content_block_08 .content-box .sec-title {
+        margin-bottom: 15px !important;
+    }
+
+    .sec-title.text-left {
+        text-align: center !important;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    #bloque-fun-fact {
+        margin-bottom: 15px;
+    }
+
+    #image_block_04 {
+        margin-top: 25px;
+    }
+
+    #imagen-legalidad {
+        margin-left: 6px !important;
+        width: 95% !important;
+    }
+
+    #span-medicos {
+        padding-bottom: 22px;
+    }
+
+    #span-empresarial {
+        padding-bottom: 19px;
+    }
+
+    #span-automotor {
+        padding-bottom: 19px;
+    }
+
+    .copyright.pull-left {
+        padding-left: 18px;
+    }
+
+    .support {
+        font-size: 20px !important;
+    }
+
+    .social-links.clearfix {
+        font-size: 20px !important;
+    }
+
+    .header-top.clearfix {
+        padding: 18px 0px;
+    }
+
+    .header-top .social-links {
+        margin-left: -3px !important;
+    }
+
+    #logo-responsive {
+        width: 150px !important;
+    }
+
+    #button-demo-style {
+        display: block !important;
+    }
+
+    #button-demo-desk {
+        display: none;
+    }
+
+    .banner-section > .auto-container > .row > .content-column > .content-box > h1 {
+        text-align: center;
+    }
+
+    .slider-image-1 .image-1 {
+        right: 90px !important;
+        top: -5px !important;
+    }
+
+    .slider-image-1 .image-5 {
+        left: 5px !important;
+        top: 33px !important;
+    }
+
+    .slider-image-1 .image-4 {
+        left: 44px !important;
+        bottom: 225px !important;
+    }
+
+    .mobile-menu > .menu-box > .mCustomScrollBox > .mCSB_container > .nav-logo {
+        text-align: center;
+    }
+
+    .contact-section > .auto-container > .row > .content-column > #content_block_09 > .content-box > #contact-form > h3 {
+        font-size: 27px !important;
+        padding-bottom: 15px;
+    }
+
+    .contact-section > .auto-container > .row > .content-column > #content_block_09 > .content-box > #contact-form > br {
+        display: none;
+    }
+
+    .contact-section > .auto-container > .row > .content-column > #content_block_09 > .content-box > #contact-form > .form-row {
+        margin-top: 0px !important;
+    }
+
+    .contact-section > .auto-container > .row > .content-column > #content_block_09 > .content-box > #contact-form > .form-row > .col-lg-6 > .form-group {
+        margin-top: 18px;
+    }
 
 }
+

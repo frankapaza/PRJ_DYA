@@ -17,9 +17,12 @@
     $("#txt_celular").keypress(function () {
         $("#txt_celular").next(".invalid-feedback").css("display", "none");
     });
-    $("#txt_usuario").keypress(function () {
-        $("#txt_usuario").next(".invalid-feedback").css("display", "none");
+    $("#txt_empresa").keypress(function () {
+        $("#txt_empresa").next(".invalid-feedback").css("display", "none");
     });
+    /*$("#txt_usuario").keypress(function () {
+        $("#txt_usuario").next(".invalid-feedback").css("display", "none");
+    });*/
     $("#txt_password").keypress(function () {
         $("#txt_password").next(".invalid-feedback").css("display", "none");
     });
@@ -35,7 +38,8 @@ function limpiar() {
     $("#txt_documento").next(".invalid-feedback").css("display", "none");
     $("#txt_email").next(".invalid-feedback").css("display", "none");
     $("#txt_celular").next(".invalid-feedback").css("display", "none");
-    $("#txt_usuario").next(".invalid-feedback").css("display", "none");
+    $("#txt_empresa").next(".invalid-feedback").css("display", "none");
+    /*$("#txt_usuario").next(".invalid-feedback").css("display", "none");*/
     $("#txt_password").next(".invalid-feedback").css("display", "none");
     $("label[for=chk_terminos_condiciones]").next(".invalid-feedback").css("display", "none");
     $('#footer_terminos').css("padding-top", "");
@@ -44,31 +48,36 @@ function limpiar() {
 function validar() {
     limpiar();
     var flgRegistrar = true;
-    if ($.trim($("#txt_nombre").val()) == "") {
+    
+    if (!(/^(?!\s)+[a-zA-Z ]+$/.test($.trim($("#txt_nombre").val())))) {
         $("#txt_nombre").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
-    if ($.trim($("#txt_apellido").val()) == "") {
+    if (!(/^(?!\s)+[a-zA-Z ]+$/.test($.trim($("#txt_apellido").val())))) {
         $("#txt_apellido").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
-    if ($.trim($("#txt_documento").val()) == "") {
+    if (!(/(^[0-9]{8}$)/.test($.trim($("#txt_documento").val())))) {
         $("#txt_documento").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
-    if ($.trim($("#txt_email").val()) == "") {
+    if (!(/^(?!\.|^[0-9]{9})[a-zA-Z0-9.]+[a-zA-Z0-9]@(?!gmail|hotmail|outlook|yahoo|\.|[0-9]|[a-z]+[0-9])[a-zA-Z](?:[a-zA-Z0-9]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9]{0,61}[a-zA-Z0-9])?)*\.[a-zA-Z]+$.*/.test($.trim($("#txt_email").val())))) {
         $("#txt_email").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
-    if ($.trim($("#txt_celular").val()) == "") {
+    if (!(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/.test($.trim($("#txt_celular").val())))) {
         $("#txt_celular").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
-    if ($.trim($("#txt_usuario").val()) == "") {
-        $("#txt_usuario").next(".invalid-feedback").css("display", "block");
+    if (!(/^(?!\s)+[a-zA-Z0-9 -.@]+$/.test($.trim($("#txt_empresa").val())))) {
+        $("#txt_empresa").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
-    if ($.trim($("#txt_password").val()) == "") {
+    /*if ($.trim($("#txt_usuario").val()) == "") {
+        $("#txt_usuario").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }*/
+    if (!(/^[a-zA-Z0-9]{6,15}$/.test($.trim($("#txt_password").val())))) {
         $("#txt_password").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
@@ -107,10 +116,15 @@ function registrar() {
         flgRegistrar = false;
     }
 
-    if ($.trim($("#txt_usuario").val()) == "") {
-        $("#txt_usuario").next(".invalid-feedback").css("display", "block");
+    if ($.trim($("#txt_empresa").val()) == "") {
+        $("#txt_empresa").next(".invalid-feedback").css("display", "block");
         flgRegistrar = false;
     }
+
+    /*if ($.trim($("#txt_usuario").val()) == "") {
+        $("#txt_usuario").next(".invalid-feedback").css("display", "block");
+        flgRegistrar = false;
+    }*/
 
     if ($.trim($("#txt_password").val()) == "") {
         $("#txt_password").next(".invalid-feedback").css("display", "block");
@@ -129,7 +143,7 @@ function registrar() {
         objUsuarioBE.objRolBE.ID_ROL_IN = 2;
         objUsuarioBE.objTipoCuentaBE = new Object();
         objUsuarioBE.objTipoCuentaBE.ID_TIP_CUE_IN = 1;
-        objUsuarioBE.LOG_USU_VC = $("#txt_usuario").val();
+        objUsuarioBE.LOG_USU_VC = $("#txt_email").val(); //$("#txt_usuario").val();
         objUsuarioBE.PAS_USU_VC = $("#txt_password").val();
         objUsuarioBE.NRO_DOC_VC = $("#txt_documento").val();
         objUsuarioBE.NOM_PER_VC = $("#txt_nombre").val();
@@ -149,7 +163,8 @@ function registrar() {
                     Swal.fire(
                     {
                         title: "¡Registro Exitoso!",
-                        text: "Registro de usuario realizado correctamente, por favor haga su verificación en su correo electrónnico.",
+                        text: "Registro de usuario realizado correctamente, por favor haga su verificación en su correo electrónico."+ 
+                              " Revisar en su bandeja de entrada o quizás también en su correo no deseado.",
                         type: "success",
                         showCancelButton: true,
                         confirmButtonText: "¿Desea ir a la pagina de ingreso?"

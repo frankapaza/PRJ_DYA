@@ -1,0 +1,208 @@
+ 
+/* Css For Detox */
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global
+4. Main Header/style-one/style-two
+5. Main Slider/style-one/style-two
+6. Intro Section
+7. Welcome Section
+9. Cta Section
+8. Research Fields
+10. Testimonial Section
+11. Researches Section
+12. Team Section
+14. Video
+15. Fact Counter
+16. News Section
+19. Clients Section
+20. Main Footer
+21. Footer Bottom
+22. Research Style Two
+23. Innovative Solution
+24. Discover Section
+25. Testimonial Section
+26. Chooseus Section
+27. News Style Two
+28. Page Title
+29. Research Page Section
+30. Research Details
+31. Professor Page Section
+32. Professor Details
+33. About Section
+34. Error Section
+35. Blog Page Section
+36. Blog Details
+37. Blog Sidebar
+38. Contact Section
+39. Google Map
+
+
+**********************************************/
+
+
+
+/*** 
+
+====================================================================
+  Reset
+====================================================================
+/*** 
+
+====================================================================
+  Global Settings
+====================================================================
+
+ ***/
+
+
+body {
+  font-size:17px;
+  color:#848484;
+  line-height:32px;
+  font-weight:400;
+  background:#ffffff;
+  font-family: 'Roboto', sans-serif;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center top;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/** feature-section **/
+
+.feature-section {
+    position: relative;
+    background: #fff;
+    padding: 50px 0px 100px 0px;
+}
+
+.feature-block-one .inner-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px 5px #e9eef7;
+    padding: 70px 50px 50px 50px;
+    transition: all 500ms ease;
+}
+
+.feature-block-one:hover .inner-box {
+    box-shadow: 0 10px 30px 3px rgba(99, 119, 238, 0.4);
+}
+
+.feature-block-one .icon-box {
+    position: relative;
+    display: inline-block;
+    font-size: 60px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 43px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.feature-block-one:hover .icon-box {
+    color: #fff;
+}
+
+.feature-block-one .icon-box:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 500ms ease;
+}
+
+.feature-block-one:hover .icon-box:after {
+    top: 0px;
+}
+
+.feature-block-one .icon-box:before {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    left: -8px;
+    top: -5px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.feature-block-one .inner-box p {
+    margin-bottom: 28px;
+}
+
+.feature-block-one .inner-box .btn-box .theme-btn.style-two {
+    padding: 10.5px 35px;
+}
+
+.feature-block-one .icon-box .anim-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    -webkit-animation: service_hexagon 3s infinite linear;
+    -moz-animation: service_hexagon 3s infinite linear;
+    -o-animation: service_hexagon 3s infinite linear;
+    animation: service_hexagon 3s infinite linear;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.feature-block-one:hover .icon-box .anim-icon {
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.feature-block-one .icon-box .anim-icon .icon-1 {
+    position: absolute;
+    left: -25px;
+    top: 60px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-animation: zoom-fade-two 5s infinite linear;
+    animation: zoom-fade-two 5s infinite linear;
+}
+
+.feature-block-one .icon-box .anim-icon .icon-2 {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-animation: zoom-fade-two 4s infinite linear;
+    animation: zoom-fade-two 4s infinite linear;
+}
+
+.feature-block-one .icon-box .anim-icon .icon-3 {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-animation: zoom-fade-two 3s infinite linear;
+    animation: zoom-fade-two 3s infinite linear;
+}

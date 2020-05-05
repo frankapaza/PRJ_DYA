@@ -773,7 +773,28 @@
 	    });
 	};
     
+	// body-layout
+	function bodylayout() {
+		if ($('.boxed_switch_menu').length) {
 
+			$('.body_switch_btn button').on('click', function () {
+				$('.body_switcher').toggleClass('switcher-show')
+			});
+
+			$("#myonoffswitch").on('click', function () {
+				$(".fixed").toggleClass("static");
+			});
+
+			$("#boxed").on('click', function () {
+				$(".main_page").addClass("active_boxlayout");
+				$('body').addClass('bg')
+			});
+			$("#full_width").on('click', function () {
+				$(".main_page").removeClass("active_boxlayout");
+				$('body').removeClass('bg')
+			});
+		};
+	}
 
 	/*	=========================================================================
 	When document is Scrollig, do

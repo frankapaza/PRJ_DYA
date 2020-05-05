@@ -1,0 +1,1326 @@
+﻿/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1335px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 387px !important;
+        left: 258px !important;
+    }
+}
+
+/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 812px) and (max-device-width : 1023px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 388px !important;
+        left: 289px !important;
+    }
+}
+
+/*RESPONSIVE IPAD/TABLET/ (VERTIRCAL) IPHONEX(HORIZONTAL) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 811px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 387px !important;
+        left: 266px !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 PLUS (HORIZONTAL) */
+@media only screen and (min-device-width : 736px) and (max-device-width : 767px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 388px !important;
+        left: 265px !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 (HORIZONTAL) */
+@media only screen and (min-device-width: 667px) and (max-device-width: 735px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 388px !important;
+        left: 255px !important;
+    }
+}
+
+/*RESPONSIVE GALAXY/PIXEL (HORIZONTAL) */
+@media only screen and (min-device-width: 570px) and (max-device-width: 666px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 389px !important;
+        left: 218px !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 5 (HORIZONTAL) */
+@media only screen and (min-device-width: 421px) and (max-device-width: 569px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 389px !important;
+        left: 202px !important;
+    }
+
+    #div-btnRegistrar {
+        margin-left: 122px !important;
+        display: block !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 /PLUS /X - IOs (VERTICAL) */
+@media only screen and (min-device-width: 377px) and (max-device-width: 420px) {
+    /*************Demografia**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-demo1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 112px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-demo1 {
+        padding-left: 112px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 166px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo2 {
+        padding-left: 182px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 166px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo3 {
+        padding-left: 182px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    /*************Empresa**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 112px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa1 {
+        padding-left: 112px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 132px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa2 {
+        padding-left: 137px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-empresa3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 162px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-empresa3 {
+        padding-left: 178px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-empresa4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 137px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-empresa4 {
+        padding-left: 152px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    /*************Automotor**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-auto1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 112px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-auto1 {
+        padding-left: 112px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 133px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto2 {
+        padding-left: 142px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 118px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto3 {
+        padding-left: 125px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 162px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto4 {
+        padding-left: 174px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto5 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 120px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto5 {
+        padding-left: 124px;
+    }
+
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    /*************SOAT**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 136px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat1 {
+        padding-left: 148px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 132px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat2 {
+        padding-left: 140px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 128px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat3 {
+        padding-left: 134px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 108px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat4 {
+        padding-left: 104px;
+    }
+
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    /*************Medicos**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 112px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico1 {
+        padding-left: 112px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 162px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico2 {
+        padding-left: 176px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-medico3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 164px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-medico3 {
+        padding-left: 174px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-medico4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 140px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-medico4 {
+        padding-left: 148px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    /*************Telecomunicaciones**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 51px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 {
+        padding-left: 36px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 27%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 40% !important;
+    }
+
+    .titulo-responsive-none {
+        display: none !important;
+    }
+
+    .panel.panel-fullscreen .panel-hdr {
+        height: 0px !important;
+    }
+
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 385px !important;
+        left: 149px !important;
+    }
+
+    #div-btnRegistrar {
+        margin-left: 46px !important;
+        display: block !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 6/7/8 /PLUS /X - IOs (VERTICAL) */
+@media only screen and (min-device-width: 326px) and (max-device-width: 376px) {
+    /*************Demografia**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-demo1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 90px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-demo1 {
+        padding-left: 90px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 144px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo2 {
+        padding-left: 160px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 144px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo3 {
+        padding-left: 160px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 > 
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    /*************Empresa**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 90px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa1 {
+        padding-left: 90px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 110px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa2 {
+        padding-left: 115px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-empresa3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 140px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-empresa3 {
+        padding-left: 156px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-empresa4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 115px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-empresa4 {
+        padding-left: 130px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    /*************Automotor**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-auto1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 90px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-auto1 {
+        padding-left: 90px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 111px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto2 {
+        padding-left: 121px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 96px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto3 {
+        padding-left: 103px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 140px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto4 {
+        padding-left: 152px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto5 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 98px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto5 {
+        padding-left: 102px;
+    }
+
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    /*************SOAT**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 114px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat1 {
+        padding-left: 126px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 110px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat2 {
+        padding-left: 118px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 106px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat3 {
+        padding-left: 112px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 86px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat4 {
+        padding-left: 82px;
+    }
+
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    /*************Medicos**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 90px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico1 {
+        padding-left: 90px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 140px;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico2 {
+        padding-left: 154px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-medico3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 142px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-medico3 {
+        padding-left: 152px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-medico4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 118px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-medico4 {
+        padding-left: 126px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    /*************Telecomunicaciones**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 29px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 {
+        padding-left: 14px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 17%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 34% !important;
+    }
+
+    .titulo-responsive-none {
+        display: none !important;
+    }
+
+    .panel.panel-fullscreen .panel-hdr {
+        height: 0px !important;
+    }
+
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 384px !important;
+        left: 139px !important;
+    }
+
+    #div-btnRegistrar {
+        margin-left: 26px !important;
+        display: block !important;
+    }
+}
+
+/*RESPONSIVE IPHONE 5 (VERTICAL) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 325px) {
+    /*************Demografia**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-demo1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 68px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-demo1 {
+        padding-left: 68px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 122px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo2 {
+        padding-left: 138px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 122px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-demo3 {
+        padding-left: 138px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-demo2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    /*************Empresa**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 68px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa1 {
+        padding-left: 68px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 88px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-empresa2 {
+        padding-left: 93px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-empresa3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 118px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-empresa3 {
+        padding-left: 130px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-empresa4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 93px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-empresa4 {
+        padding-left: 100px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-7 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-empresa2 >
+    .col-lg-5 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    /*************Automotor**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-auto1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 68px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-auto1 {
+        padding-left: 68px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 89px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto2 {
+        padding-left: 99px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 74px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-auto3 {
+        padding-left: 81px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 118px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto4 {
+        padding-left: 130px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto5 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 76px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-auto5 {
+        padding-left: 80px;
+    }
+
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto2 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-auto3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    /*************SOAT**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 92px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat1 {
+        padding-left: 104px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 88px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-soat2 {
+        padding-left: 96px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 84px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat3 {
+        padding-left: 90px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 54px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-soat4 {
+        padding-left: 50px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-soat2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    /*************Medicos**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 68px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico1 {
+        padding-left: 68px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico2 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 118px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-medico2 {
+        padding-left: 132px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-medico3 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 116px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-medico3 {
+        padding-left: 130px;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-medico4 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 96px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-medico4 {
+        padding-left: 104px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico1 >
+    .col-lg-6 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico2 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-medico3 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    /*************Telecomunicaciones**************/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 {
+        display: block !important;
+        border-bottom: 0px !important;
+        padding-left: 14px;
+        text-align: center !important;
+    }
+
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 > h2{
+        line-height: 1.5;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-telecom1 >  h2 {
+        font-size: 15px;
+        padding-left: 9px;
+    }
+
+    /*TABTOOL*/
+    .mod-bg-1 > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 4%;
+    }
+
+    .panel-fullscreen > .page-wrapper > .page-inner > .page-content-wrapper > main > .header-telecom1 >
+    .col-lg-12 > .panel > .tittle-responsive-fullscreen > .pt-2 {
+        margin-left: 24% !important;
+    }
+
+    .titulo-responsive-none {
+        display: none !important;
+    }
+
+    .panel.panel-fullscreen .panel-hdr {
+        height: 0px !important;
+    }
+
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 384px !important;
+        left: 119px !important;
+    }
+
+    #div-btnRegistrar {
+        display: block !important;
+    }
+
+}

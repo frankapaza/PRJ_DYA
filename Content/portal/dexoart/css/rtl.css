@@ -1,0 +1,147 @@
+
+/** rtl css for detox **/
+
+.rtl .main-header .main-menu .navigation > li{
+  float: right;
+}
+
+.rtl .main-header .main-menu .navigation > li:first-child{
+  margin-left: 30px !important;
+}
+
+.rtl .main-header .main-menu .navigation > li > ul > li > a{
+  text-align: right;
+}
+
+.rtl .main-header .main-menu .navigation > li > ul > li > ul > li > a {
+  text-align: right;
+}
+
+.rtl .main-header .main-menu .navigation > li > ul > li.dropdown > a:after {
+  right: inherit;
+  left: 0px;
+  content: "\f104";
+}
+
+.rtl .mobile-menu .contact-info{
+  text-align: right;
+}
+
+.rtl .mobile-menu .social-links{
+  text-align: right;
+}
+
+.rtl .about-section #content_block_01 .content-box{
+  text-align: right;
+  z-index: 1;
+}
+
+.rtl .about-section #content_block_01 .content-box .list-item li{
+  padding-left: 0px;
+  padding-right: 45px;
+}
+
+.rtl .about-section #content_block_01 .content-box .list-item li:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .main-header .sticky-header .main-menu .navigation > li:first-child {
+  margin-left: 0px !important;
+}
+
+.rtl .service-style-two #content_block_04 .content-box{
+  text-align: right;
+}
+
+.rtl .service-style-two #content_block_04 .content-box .list-item li{
+  padding-left: 0px;
+  padding-right: 45px;
+}
+
+.rtl .service-style-two #content_block_04 .content-box .list-item li:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .testimonial-section #content_block_03 .content-box{
+  text-align: right;
+}
+
+.rtl .main-footer .footer-top .footer-widget{
+  text-align: right;
+}
+
+.rtl .main-footer .footer-top .contact-widget .social-links li{
+  float: right;
+}
+
+.rtl .main-footer .footer-top .contact-widget .social-links li:last-child{
+  margin-right: 10px;
+}
+
+.rtl .main-footer .footer-top .contact-widget .social-links li:first-child{
+  margin-right: 0px;
+}
+
+.rtl .about-section #image_block_03 .image-box{
+	margin: 74px -160px 70px 70px;
+	z-index: 1;
+}
+
+.rtl .about-section #image_block_03 .image-box .image-1{
+	left: -40px;
+}
+
+.rtl .service-style-two .content-box{
+	text-align: right;
+}
+
+.rtl .service-style-two .content-box .list-item li{
+	padding-left: 0px;
+	padding-right: 45px;
+}
+
+.rtl .service-style-two .content-box .list-item li:before{
+	left: inherit;
+	right: 0px;
+}
+
+.rtl .service-style-two .tab-btns li .btn-inner{
+	padding-left: 0px;
+	padding-right: 92px;
+}
+
+.rtl .service-style-two .tab-btns li .btn-inner .icon-box{
+	left: inherit;
+	right: 0px;
+}
+
+.rtl .service-style-two .tab-btns li{
+	text-align: right;
+}
+
+.rtl .service-style-two .tab-btns li:after{
+	right: -10px;
+}
+
+.rtl .switcher{
+	right: 0px;
+}
+
+.rtl .switcher .switch_btn{
+	right: 30px;
+}
+
+.rtl .testimonial-section .content-box{
+	text-align: right;
+}
+
+.rtl .testimonial-section .testimonial-inner .image-box{
+	margin-right: 0px;
+	margin-left: 30px;
+}
+
+.rtl .switcher .switch_menu{
+	left: -250px;
+}

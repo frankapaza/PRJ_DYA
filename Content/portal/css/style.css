@@ -2973,9 +2973,9 @@
 	position: relative;
 }
 
-.testimonial-style-two .lower-content .testimonial-content .inner-box .content-box .text:before{
+.testimonial-style-two .lower-content .testimonial-content .inner-box .content-box .text:before {
 	position: absolute;
-	content: "\f105";
+	content: "\f107";
 	font-family: 'Flaticon';
 	font-size: 200px;
 	line-height: 150px;

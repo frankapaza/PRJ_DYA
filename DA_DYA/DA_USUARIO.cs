@@ -103,7 +103,10 @@ namespace DA_DYA
                 }
                 else
                 {
-                    objUsuarioBE.objResBE = new KeyValuePair<int, string>(2, "Error, usuario y contraseña incorrecto.");
+                    objUsuarioBE.objResBE = new KeyValuePair<int, string>(2, 
+                        "No se ha encontrado su cuenta de DyA debido a:<br/><br/>" +
+                        "- Primero debe aceptar la verificación de su cuenta revisando en su correo<br/>electrónico afiliado para que el sistema valide su estadia.<br/><br/>" +
+                        "- Ha introducido incorrectamente su nombre de usuario o contraseña.<br/>Volver a intentarlo.");
                 }
             }
             catch (Exception ex)

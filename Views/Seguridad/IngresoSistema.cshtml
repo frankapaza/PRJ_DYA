@@ -13,33 +13,30 @@
         </a>
     </div>
     <div class="card p-4 border-top-left-radius-0 border-top-right-radius-0">
-        <form action="intel_introduction.html">
-            <div class="form-group">
-                <label class="form-label" for="username">Usuario</label>
-                <input type="email" id="txt_usuario" class="form-control" placeholder="Ingrese su Usuario">
-                <span class="help-block">
-                    Ingrese su Usuario
-                </span>
+        <div class="form-group">
+            <label class="form-label" for="username">Correo electrónico</label>
+            <input type="email" id="txt_usuario" class="form-control" placeholder="Correo electrónico">
+            <div class="invalid-feedback">Debe ingresar correctamente su correo.</div>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="password">Contraseña</label>
+            <input type="password" id="txt_password" class="form-control" placeholder="Contraseña">
+            <div class="invalid-feedback">Contraseña incorrecta. Intentelo de nuevo.</div>
+        </div>
+        <div class="form-group text-left">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="rememberme">
+                <label class="custom-control-label" for="rememberme"> Recordar mi usuario por 20 días</label>
             </div>
-            <div class="form-group">
-                <label class="form-label" for="password">Contraseña</label>
-                <input type="password" id="txt_password" class="form-control" placeholder="Ingrese su Password">
-                <span class="help-block">
-                    Ingrese su Contraseña
-                </span>
-            </div>
-            <div class="form-group text-left">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="rememberme">
-                    <label class="custom-control-label" for="rememberme"> Recordar mi usuario por 20 días</label>
-                </div>
-            </div>
-            <div class="form-group text-center">
-                <button type="button" id="btn_login" class="btn btn-default" style="width: 150px;">Ingresar</button>
-            </div>
-        </form>
-        <div class="blankpage-footer text-center" style="padding-top: 30px;">
-            <a href="#"><strong>Olvido su Contraseña</strong></a> | <a href="https://localhost:44357/Seguridad/NuevoUsuario"><strong>Registrar Nuevo Usuario</strong></a>
+        </div>
+        <div class="text-center" style="margin-bottom: 20px;">
+            <a href="#"><strong>¿Has olvidado tu contraseña?</strong></a>
+        </div>
+        <div class="form-group text-center">
+            <button type="button" id="btn_login" class="btn btn-default" style="width: 150px;">Ingresar</button>
+        </div>
+        <div class="blankpage-footer text-center" style="font-size: 15px; padding: 0px 0px !important;">
+            <a href="https://localhost:44357/Seguridad/NuevoUsuario"><strong>Registrar Nuevo Usuario</strong></a>
         </div>
     </div>
 </div>

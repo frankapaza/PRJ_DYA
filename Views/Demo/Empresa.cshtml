@@ -17,11 +17,16 @@
     </h1>
 </div>
 
-<div class="row">
+<div class="row header-empresa1">
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="panel-1" class="panel">
-            <div class="panel-hdr">
+            <div class="panel-hdr tittle-responsive-empresa1" style="display: none;">
                 <h2>
+                    Ubicación geográfica
+                </h2>
+            </div>
+            <div class="panel-hdr tittle-responsive-fullscreen">
+                <h2 class="titulo-responsive-none">
                     Ubicación geográfica
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
@@ -34,7 +39,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="panel-toolbar">
+                <div class="panel-toolbar pt-2">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
                     <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaUbicacion();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
@@ -44,7 +49,7 @@
                 <div class="panel-content">
                     <div class="tab-content p-3">
                         <div class="tab-pane fade show active" id="tab_empresa_ubicacion" role="tabpanel">
-                            <div id="dashboard-ubicacion" style="min-height: 300px;"></div>
+                            <div id="dashboard-ubicacion" style="min-height: 385px;"></div>
                         </div>
                         <div class="tab-pane fade" id="tab_empresa_ubicacion_detalle" role="tabpanel">
                             <div class="table-responsive">
@@ -68,8 +73,13 @@
 
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="panel-2" class="panel">
-            <div class="panel-hdr">
+            <div class="panel-hdr tittle-responsive-empresa2" style="display: none;">
                 <h2>
+                    Giro de negocio
+                </h2>
+            </div>
+            <div class="panel-hdr tittle-responsive-fullscreen">
+                <h2 class="titulo-responsive-none">
                     Giro de negocio
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
@@ -82,7 +92,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="panel-toolbar">
+                <div class="panel-toolbar pt-2">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
                     <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaGiro();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
@@ -115,11 +125,16 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row header-empresa2">
     <div class="col-lg-7 col-md-12 col-sm-12">
         <div id="panel-3" class="panel">
-            <div class="panel-hdr">
+            <div class="panel-hdr tittle-responsive-empresa3" style="display: none;">
                 <h2>
+                    Estado
+                </h2>
+            </div>
+            <div class="panel-hdr tittle-responsive-fullscreen">
+                <h2 class="titulo-responsive-none">
                     Estado
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
@@ -132,7 +147,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="panel-toolbar">
+                <div class="panel-toolbar pt-2">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
                     <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaEstado();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
@@ -165,8 +180,13 @@
     </div>
     <div class="col-lg-5 col-md-12 col-sm-12">
         <div id="panel-4" class="panel">
-            <div class="panel-hdr">
+            <div class="panel-hdr tittle-responsive-empresa4" style="display: none;">
                 <h2>
+                    Tipo Persona
+                </h2>
+            </div>
+            <div class="panel-hdr tittle-responsive-fullscreen">
+                <h2 class="titulo-responsive-none">
                     Tipo Persona
                 </h2>
                 <div class="panel-toolbar pr-3 align-self-end">
@@ -179,7 +199,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="panel-toolbar">
+                <div class="panel-toolbar pt-2">
                     <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
                     <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen" onclick="ListarEmpresaTipo();"></button>
                     <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
@@ -218,7 +238,6 @@
         </p>
     </div>
 </div>
-
 
 @section scripts{
     @Scripts.Render("~/Scripts/Demo/Empresa.js")
