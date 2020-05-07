@@ -1,5 +1,5 @@
 ﻿/*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1335px) {
+@media only screen and (min-device-width : 1026px) and (max-device-width : 1335px) {
     #icon-porcentaje {
         color: #7b7b7b;
         top: 387px !important;
@@ -8,20 +8,26 @@
 }
 
 /*RESPONSIVE IPAD/TABLET/IPHONEX(HORIZONTAL) */
-@media only screen and (min-device-width : 812px) and (max-device-width : 1023px) {
+@media only screen and (min-device-width : 825px) and (max-device-width : 1025px) {
     #icon-porcentaje {
         color: #7b7b7b;
         top: 388px !important;
         left: 289px !important;
     }
+    #nav_registrar {
+        bottom: 30px;
+    }
 }
 
 /*RESPONSIVE IPAD/TABLET/ (VERTIRCAL) IPHONEX(HORIZONTAL) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 811px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 824px) {
     #icon-porcentaje {
         color: #7b7b7b;
         top: 387px !important;
         left: 266px !important;
+    }
+    #nav_registrar {
+        bottom: 25px;
     }
 }
 
@@ -32,14 +38,62 @@
         top: 388px !important;
         left: 265px !important;
     }
+    #nav_registrar {
+        bottom: 20px;
+    }
+}
+
+/*RESPONSIVE PIXEL 2 (HORIZONTAL) */
+@media only screen and (min-device-width : 697px) and (max-device-width : 732px) {
+    #icon-porcentaje {
+        color: #7b7b7b;
+        top: 388px !important;
+        left: 265px !important;
+    }
+    body {
+        margin-bottom: 105px !important;
+    }
+
+    #nav_registrar {
+        display: none !important;
+    }
+
+    .footer-horizontal-demo {
+        display: block !important;
+        bottom: 75px;
+    }
+
+    .text-foot {
+        width: 300px;
+        padding-left: 15px;
+        margin-right: 222px;
+    }
 }
 
 /*RESPONSIVE IPHONE 6/7/8 (HORIZONTAL) */
-@media only screen and (min-device-width: 667px) and (max-device-width: 735px) {
+@media only screen and (min-device-width: 667px) and (max-device-width: 696px) {
     #icon-porcentaje {
         color: #7b7b7b;
         top: 388px !important;
         left: 255px !important;
+    }
+    body {
+        margin-bottom: 105px !important;
+    }
+
+    #nav_registrar {
+        display: none !important;
+    }
+
+    .footer-horizontal-demo {
+        display: block !important;
+        bottom: 75px;
+    }
+
+    .text-foot {
+        width: 300px;
+        padding-left: 10px;
+        margin-right: 158px;
     }
 }
 
@@ -50,6 +104,21 @@
         top: 389px !important;
         left: 218px !important;
     }
+    body {
+        margin-bottom: 105px !important;
+    }
+    #nav_registrar {
+        display: none !important;
+    }
+    .footer-horizontal-demo {
+        display: block !important;
+        bottom: 75px;
+    }
+    .text-foot {
+        width: 300px;
+        padding-left: 10px;
+        margin-right: 131px;
+    }
 }
 
 /*RESPONSIVE IPHONE 5 (HORIZONTAL) */
@@ -59,10 +128,16 @@
         top: 389px !important;
         left: 202px !important;
     }
-
-    #div-btnRegistrar {
-        margin-left: 122px !important;
+    body {
+        margin-bottom: 105px !important;
+    }
+    .footer-horizontal-demo {
         display: block !important;
+        bottom: 75px;
+    }
+    .text-foot {
+        width: 300px;
+        margin-right: 62px;
     }
 }
 
@@ -488,8 +563,20 @@
         left: 149px !important;
     }
 
-    #div-btnRegistrar {
-        margin-left: 46px !important;
+    body {
+        margin-bottom: 160px !important;
+    }
+
+    .footer-vertical-demo {
+        display: block !important;
+        bottom: 130px;
+    }
+
+    .footer-vertical-demo > .card {
+        min-width: 414px !important;
+    }
+
+    .footer-vertical-demo > .card > .card-body > p > br {
         display: block !important;
     }
 }
@@ -884,8 +971,17 @@
         left: 139px !important;
     }
 
-    #div-btnRegistrar {
-        margin-left: 26px !important;
+    body {
+        margin-bottom: 160px !important;
+    }
+    .footer-vertical-demo {
+        display: block !important;
+        bottom: 130px;
+    }
+    .footer-vertical-demo > .card {
+        min-width: 375px !important;
+    }
+    .footer-vertical-demo > .card > .card-body > p > br {
         display: block !important;
     }
 }
@@ -1318,9 +1414,11 @@
         top: 384px !important;
         left: 119px !important;
     }
-
-    #div-btnRegistrar {
-        display: block !important;
+    body {
+        margin-bottom: 160px !important;
     }
-
+    .footer-vertical-demo {
+        display: block !important;
+        bottom: 130px;
+    }
 }
